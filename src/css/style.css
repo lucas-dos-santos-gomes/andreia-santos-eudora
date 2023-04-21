@@ -1,0 +1,35 @@
+@font-face {
+  font-family: SofiaProLighter;
+  src: url(../fonts/sofiapro/Fonts/sofiapro-light.otf);
+}
+
+@font-face {
+  font-family: SofiaProRegular;
+  src: url(../fonts/sofiapro/Fonts/SofiaPro-Regular.woff2);
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #532685;
+  padding: 20px 40px;
+}
+
+.header_nav_list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header_nav_list_item a {
+  font-family: SofiaProRegular;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #FFF;
+}
