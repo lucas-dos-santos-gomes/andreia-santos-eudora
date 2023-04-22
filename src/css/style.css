@@ -19,6 +19,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  width: 90%;
+  padding: 100px 0;
+  margin: auto;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -106,7 +112,6 @@ html {
 .main_top {
   background: linear-gradient(135deg, #682FA8, #9e4aff 97%);
   height: calc(100vh - 83px);
-  margin-bottom: 300px;
 }
 
 .main_top .first-container {
@@ -156,3 +161,5 @@ html {
 .main_top_article_img img {
   height: 80vh;
 }
+
+/*.products {}*/
