@@ -27,10 +27,12 @@ html {
 
 /* HEADER */
 .header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #532685;
+  width: 100%;
   padding: 20px 40px;
 }
 
@@ -111,7 +113,7 @@ html {
 /* MAIN */
 .main_top {
   background: linear-gradient(135deg, #682FA8, #9e4aff 97%);
-  height: calc(100vh - 83px);
+  height: 100vh;
 }
 
 .main_top .first-container {
@@ -128,7 +130,7 @@ html {
 }
 
 .main_top_article_text {
-  padding-top: 120px;
+  padding-top: 200px;
   width: 50%;
   height: 100%;
 }
