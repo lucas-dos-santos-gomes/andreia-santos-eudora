@@ -19,6 +19,20 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #070d12;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #532685;
+  border-radius: 20px;
+  border: 3px solid #070d12;
+}
+
 .container {
   width: 90%;
   padding: 100px 0;
