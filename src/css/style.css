@@ -21,6 +21,10 @@ html {
   padding: 20px 40px;
 }
 
+.header_img-logo {
+  cursor: pointer;
+}
+
 .header_nav_list {
   display: flex;
   align-items: center;
@@ -28,8 +32,66 @@ html {
 }
 
 .header_nav_list_item a {
+  position: relative;
   font-family: SofiaProRegular;
   font-size: 2rem;
   text-transform: uppercase;
   color: #FFF;
+}
+
+.header_nav_list_item a::after {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #FFF;
+  transition: 0.4s;
+}
+
+.header_nav_list_item a:hover::after {
+  width: 99%;
+}
+
+#focused {
+  color: #C3AF01;
+}
+
+#focused::after {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #C3AF01;
+  transition: 0.4s;
+}
+
+#focused:hover::after {
+  width: 99%;
+}
+
+#img-bag {
+  padding: 10px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms background-color;
+}
+
+#img-bag:hover {
+  background-color: #FFF;
+}
+
+#img-bag:hover #white-bag {
+  display: none;
+}
+
+#img-bag:hover #black-bag {
+  display: inline-block;
+}
+
+#black-bag {
+  display: none;
 }

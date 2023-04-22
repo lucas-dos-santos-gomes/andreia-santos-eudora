@@ -12,12 +12,14 @@
 <body>
   <header class="header">
     <div class="header_img-logo">
-      <img src="./src/img/logo.svg" alt="Logo da marca Eudora" />
+      <a href="./index.html">
+        <img src="./src/img/logo.svg" alt="Logo da marca Eudora" />
+      </a>
     </div>
     <nav class="header_nav">
       <ul class="header_nav_list">
         <li class="header_nav_list_item">
-          <a href="#">Home</a>
+          <a href="#" id="focused">Home</a>
         </li>
         <li class="header_nav_list_item">
           <a href="#">Sobre mim</a>
@@ -28,10 +30,9 @@
         <li class="header_nav_list_item">
           <a href="#">Contato</a>
         </li>
-        <li class="header_nav_list_item">
-          <a href="#">
-            <img src="./src/img/white-bag.webp" alt="Ícone de sacola para direcionar até a parte de compras" />
-          </a>
+        <li class="header_nav_list_item" id="img-bag">
+          <img id="white-bag" src="./src/img/white-bag.webp" alt="Ícone branco de sacola para direcionar até a parte de compras" />
+          <img id="black-bag" src="./src/img/bag.webp" alt="Ícone preto de sacola para direcionar até a parte de compras" />
         </li>
       </ul>
     </nav>
