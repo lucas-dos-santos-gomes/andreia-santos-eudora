@@ -35,7 +35,7 @@ html {
 
 .container {
   width: 90%;
-  padding: 100px 0;
+  padding: 85px 0;
   margin: auto;
 }
 
@@ -45,9 +45,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #532685;
   width: 100%;
+  height: 85px;
   padding: 20px 40px;
+  box-sizing: border-box;
+  transition: .7s;
+}
+.header.active {
+  background-color: #532685;
 }
 
 .header_img-logo {
@@ -84,6 +89,15 @@ html {
 
 #focused {
   color: #C3A051;
+  transition: .3s;
+}
+
+#focused:hover {
+  color: #ffc84a;
+}
+
+#focused.active {
+  color: #ffc84a;
 }
 
 #focused::after {
@@ -93,7 +107,7 @@ html {
   content: " ";
   width: 0;
   height: 2px;
-  background-color: #C3A051;
+  background-color: #ffc84a;
   transition: 0.4s;
 }
 
@@ -144,7 +158,7 @@ html {
 }
 
 .main_top_article_text {
-  padding-top: 200px;
+  padding-top: 30vh;
   width: 50%;
   height: 100%;
 }
