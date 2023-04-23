@@ -196,7 +196,7 @@ html {
 /* PRODUCTS */
 .products-container {
   height: 100vh;
-  padding: 30px 0;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -222,7 +222,7 @@ html {
 
 .products-content {
   position: relative;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .products-content i {
@@ -258,8 +258,17 @@ html {
   display: flex;
   gap: 10px;
   overflow-x: hidden;
-  /*scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.products-list.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.products-list.dragging .products-list_items {
+  pointer-events: none;
 }
 
 .products-list_items {
@@ -270,7 +279,6 @@ html {
   padding: 10px;
   border: 2px solid #CCC;
   box-sizing: border-box;
-  /* scroll-snap-align: start; */
 }
 
 .products-list_items .product-image {

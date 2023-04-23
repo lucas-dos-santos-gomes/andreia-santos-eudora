@@ -1,6 +1,6 @@
-const lista = document.querySelector(".products-list");
+const productsList = document.querySelector(".products-list");
 function addListItem() {
-  lista.innerHTML += (`
+  productsList.innerHTML += (`
     <li class="products-list_items" title="O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.">
       <img class="product-image" src="./src/img/products/siage_nutri_rose_shamp_cond.jpg" alt="Combo nutri rose com shampoo e condicionador" />
       <h3 class="product-title">Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml</h3>
@@ -23,22 +23,35 @@ let isDragStart = false, prevPageX, prevScrollLeft;
 function dragStart(e) {
   isDragStart = true;
   prevPageX = e.pageX;
-  prevScrollLeft = lista.scrollLeft
+  prevScrollLeft = productsList.scrollLeft
 }
 
 function dragging(e) {
-  if(!isDragStart) {
-    return;
-  }
+  if(!isDragStart) return;
   e.preventDefault();
+  productsList.classList.add("dragging");
   let positionDiff = e.pageX - prevPageX;
-  lista.scrollLeft = prevScrollLeft - positionDiff;
+  productsList.scrollLeft = prevScrollLeft - positionDiff;
 }
 
 function dragStop() {
   isDragStart = false;
+  productsList.classList.remove("dragging");
 }
 
-lista.addEventListener("mousedown", dragStart);
-lista.addEventListener("mousemove", dragging);
-lista.addEventListener("mouseup", dragStop);
+productsList.addEventListener("mousedown", dragStart);
+productsList.addEventListener("mousemove", dragging);
+productsList.addEventListener("mouseup", dragStop);
+
+// -----------------------
+
+const firstProduct = productsList.querySelectorAll(".products-list_items")[0];
+const arrowIcons = document.querySelectorAll(".products-content i");
+
+let firstProductWidth = firstProduct.clientWidth + 14;
+
+arrowIcons.forEach(icon => {
+  icon.addEventListener("click", () => {
+    productsList.scrollLeft += icon.id == "arrow-left" ? -firstProductWidth : firstProductWidth;
+  });
+});
