@@ -248,6 +248,7 @@ html {
 
 .products-content i:first-child {
   left: -23px;
+  display: none;
 }
 
 .products-content i:last-child {

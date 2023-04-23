@@ -23,7 +23,7 @@ let isDragStart = false, prevPageX, prevScrollLeft;
 function dragStart(e) {
   isDragStart = true;
   prevPageX = e.pageX;
-  prevScrollLeft = productsList.scrollLeft
+  prevScrollLeft = productsList.scrollLeft;
 }
 
 function dragging(e) {
@@ -32,6 +32,7 @@ function dragging(e) {
   productsList.classList.add("dragging");
   let positionDiff = e.pageX - prevPageX;
   productsList.scrollLeft = prevScrollLeft - positionDiff;
+  showHideIcons();
 }
 
 function dragStop() {
@@ -48,10 +49,19 @@ productsList.addEventListener("mouseup", dragStop);
 const firstProduct = productsList.querySelectorAll(".products-list_items")[0];
 const arrowIcons = document.querySelectorAll(".products-content i");
 
-let firstProductWidth = firstProduct.clientWidth + 14;
+let firstProductWidth = firstProduct.clientWidth + 14; // getting first list item width & adding 14 margin value
+let scrollWidth = productsList.scrollWidth - productsList.clientWidth; // getting max scrollable width
+
+function showHideIcons(params) {
+  // showing and hiding prev/next icon according to carousel scroll left value  
+  arrowIcons[0].style.display = productsList.scrollLeft == 0 ? "none": "inline-block";
+  arrowIcons[1].style.display = productsList.scrollLeft == scrollWidth ? "none": "inline-block";
+}
 
 arrowIcons.forEach(icon => {
   icon.addEventListener("click", () => {
+    // if clicked icon is left, reduce width value from the carousel scroll left else add to it
     productsList.scrollLeft += icon.id == "arrow-left" ? -firstProductWidth : firstProductWidth;
+    setTimeout(showHideIcons, 60); // calling function after 60ms;
   });
 });
