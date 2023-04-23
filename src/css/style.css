@@ -41,7 +41,7 @@ html {
 
 /* HEADER */
 .header {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,8 +51,11 @@ html {
   box-sizing: border-box;
   transition: .7s;
 }
+
 .header.active {
   background-color: #532685;
+  position: fixed;
+  z-index: 10;
 }
 
 .header_img-logo {
@@ -93,11 +96,11 @@ html {
 }
 
 #focused:hover {
-  color: #ffc84a;
+  color: #FFC84A;
 }
 
 #focused.active {
-  color: #ffc84a;
+  color: #FFC84A;
 }
 
 #focused::after {
@@ -107,7 +110,7 @@ html {
   content: " ";
   width: 0;
   height: 2px;
-  background-color: #ffc84a;
+  background-color: #FFC84A;
   transition: 0.4s;
 }
 
@@ -159,7 +162,6 @@ html {
 .main_top_article_text {
   padding-top: 30vh;
   width: 50%;
-  height: 100%;
 }
 
 .main_top_article_text .main-title {
@@ -216,4 +218,108 @@ html {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+}
+
+.products-content {
+  position: relative;
+  padding-top: 30px;
+}
+
+.products-content i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 46px;
+  background-color: #CCCCCC99;
+  cursor: pointer;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.products-content:hover > i {
+  display: inline-block;
+  opacity: 1;
+}
+
+.products-content i:first-child {
+  left: -23px;
+}
+
+.products-content i:last-child {
+  right: -23px;
+}
+
+.products-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  /*scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;*/
+}
+
+.products-list_items {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 390px;
+  padding: 10px;
+  border: 2px solid #CCC;
+  box-sizing: border-box;
+  /* scroll-snap-align: start; */
+}
+
+.products-list_items .product-image {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.products-list_items .product-title {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: auto;
+}
+
+.products-list_items .product-value-discount {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.products-list_items .product-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.products-list_items .product-value-installment {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.products-list_items .button-put-bag {
+  align-self: center;
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #532685;
+  color: #FFF;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.button-put-bag:hover {
+  transform: scale(1.05);
+}
+
+.button-put-bag:active {
+  transform: scale(0.95);
 }
