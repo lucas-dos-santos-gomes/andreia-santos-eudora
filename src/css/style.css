@@ -200,7 +200,6 @@ html {
 }
 
 /* PRODUCTS */
-
 .products_title-content {
   display: flex;
   align-items: center;
@@ -360,3 +359,6 @@ html {
 }
 
 /* ABOUT ME */
+.about-me {
+  background-color: #9e4aff;
+}
