@@ -10,7 +10,7 @@
   src: url(../fonts/sofiapro/Fonts/SofiaPro-Regular.woff2);
 }
 
-p, a, li, h2, h3, h4, h5, h6 {
+p, a, li, h2, h3, h4, h5, h6, button {
   font-family: SofiaProRegular;
 }
 
@@ -261,6 +261,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   cursor: grab;
+  margin-bottom: 20px;
 }
 
 .products-list.dragging {
@@ -319,16 +320,40 @@ html {
   padding: 10px 0;
   font-size: 14px;
   text-transform: uppercase;
-  background-color: #532685;
-  color: #FFF;
+  border-color: #532685;
+  color: #532685;
   cursor: pointer;
   transition: .4s;
 }
 
 .button-put-bag:hover {
   transform: scale(1.05);
+  background-color: #532685;
+  color: #FFF;
 }
 
 .button-put-bag:active {
   transform: scale(0.95);
+}
+
+.products_submit-content {
+  display: flex;
+}
+
+.submit-products-page {
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #532685;
+  color: #FFF;
+  transition: .3s;
+}
+
+.submit-products-page:hover {
+  transform: scale(1.05);
+}
+
+.submit-products-page:active {
+  transform: scale(0.98);
 }
