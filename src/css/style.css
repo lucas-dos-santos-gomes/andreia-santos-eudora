@@ -225,7 +225,7 @@ html {
   padding-top: 20px;
 }
 
-.products-content i {
+.products-wrapper i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -241,17 +241,17 @@ html {
   transition: .3s opacity;
 }
 
-.products-content:hover > i {
+.products-wrapper:hover > i {
   display: inline-block;
   opacity: 1;
 }
 
-.products-content i:first-child {
+.products-wrapper i:first-child {
   left: -23px;
   display: none;
 }
 
-.products-content i:last-child {
+.products-wrapper i:last-child {
   right: -23px;
 }
 
