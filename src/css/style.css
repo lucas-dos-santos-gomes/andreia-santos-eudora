@@ -358,9 +358,50 @@ html {
   transform: scale(0.98);
 }
 
+/* BACKGROUND EUDORA FIXED */
+.bg-eudora-fixed {
+  background-image: url(../img/logo/logo-eudora3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 60%;
+  width: 100%;
+  background-color: #532685;
+  height: 100vh;
+  padding: 85px 0;
+  box-sizing: border-box;
+}
+/*
+.bg-eudora-fixed .container {
+  height: 100%;
+}
+
+.bg-eudora-fixed_content {
+  background-image: url(../img/logo/logo-eudora3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 60%;
+  width: 100%;
+  height: 100%;
+}
+*/
 /* ABOUT ME */
 .about-me {
-  background-color: #532685;
+  background-color: #FFF;
+}
+
+.about-me_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me_container > div {
+  width: 45%;
+}
+
+.about-me_image {
+  width: 80%;
 }
 
 /* FOOTER */
