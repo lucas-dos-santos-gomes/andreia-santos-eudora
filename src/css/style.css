@@ -397,6 +397,10 @@ html {
 }
 
 .about-me_text-container {
+  background-image: url(../img/bg-about-me-text.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -421,6 +425,9 @@ html {
 .about-me_signature {
   text-align: end;
 }
+
+/* CONTACT */
+
 
 /* FOOTER */
 #whats{
