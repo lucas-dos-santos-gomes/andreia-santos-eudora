@@ -10,7 +10,7 @@
   src: url(../fonts/sofiapro/Fonts/SofiaPro-Regular.woff2);
 }
 
-p, a, li, h2, h3, h4, h5, h6, button {
+*, p, a, li, h2, h3, h4, h5, h6, button, label {
   font-family: SofiaProRegular;
 }
 
@@ -427,7 +427,22 @@ html {
 }
 
 /* CONTACT */
+.contact {
+  background-color: #9e4aff;
+}
 
+.contact_container {
+  display: grid;
+  place-items: center;
+  padding: 40px 0;
+}
+
+.contact-form {
+  width: 30vw;
+  height: 70vh;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+}
 
 /* FOOTER */
 #whats{
