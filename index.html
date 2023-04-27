@@ -109,19 +109,29 @@
       <a name="contact"></a>
       <div class="container">
         <div class="contact_container sections-container">
-          .contact-
           <div class="contact-form">
             <div class="login-box">
               <h2>Mande um E-mail</h2>
               <form>
                 <div class="user-box">
-                  <input type="text" name="" required="" placeholder="Nome Sobrenome" />
+                  <input type="text" name="username" id="username" placeholder="Nome Sobrenome" required />
                   <label>Nome completo</label>
                 </div>
                 <div class="user-box">
-                  <input type="email" name="" required="" placeholder="user@email.com" />
+                  <input type="email" name="email" id="email" placeholder="user@email.com" required />
                   <label>E-mail</label>
                 </div>
+                <div class="user-box">
+                  <input type="text" name="" placeholder="--- Escolha uma opção ---" list="subject" required />
+                  <label>Assunto</label>
+                  <datalist id="subject">
+                    <option>Dúvida</option>
+                    <option>Feedback</option>
+                    <option>Problema</option>
+                    <option>Pedido de compra</option>
+                    <option>Parceria</option>
+                  </datalist>
+                </div>j
 
                 <a href="#">
                   <span></span>
