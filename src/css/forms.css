@@ -64,6 +64,34 @@
   opacity: 1;
 }
 
+.login-box .user-box span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 30px;
+  background-color: inherit;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.login-box .user-box span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #FF9950;
+  left: 0;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform .2s ease;
+}
+
+.login-box .user-box input:focus ~ span::after,
+.login-box .user-box input:valid ~ span::after {
+  transform: translateX(0%);
+}
+
 .login-box form a {
   position: relative;
   display: inline-block;
@@ -167,69 +195,3 @@
     bottom: 100%;
   }
 }
-
-/*
-.field {
-  position: relative;
-  height: 52px;
-  width: 100%;
-  max-width: 150px;
-  color: #FFF;
-  overflow: hidden;
-}
-
-.field input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  color: #FFF;
-  line-height: 52px;
-  outline: 0;
-  background-color: inherit;
-  padding: 25px 0 0;
-  border: none;
-  box-sizing: border-box;
-}
-
-.field .label-wrapper {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  background-color: inherit;
-  left: 0;
-  pointer-events: none;
-  border-bottom: 1px solid white;
-}
-
-.field .label-wrapper::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-bottom: 3px solid #FF9950;
-  left: 0;
-  bottom: -1px;
-  transform: translateX(-100%);
-  transition: transform .2s ease;
-}
-
-.field .label-text {
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  transition: all .2s ease;
-}
-
-.field input:focus + .label-wrapper .label-text,
-.field input:valid + .label-wrapper .label-text {
-  font-size: 12px;
-  color: #FF9950;
-  transform: translateY(-150%);
-}
-
-.field input:focus + .label-wrapper::after,
-.field input:focus + .label-wrapper::after {
-  transform: translateX(0%);
-}
-*/

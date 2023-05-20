@@ -432,14 +432,25 @@ html {
 }
 
 .contact_container {
-  display: grid;
-  place-items: center;
-  padding: 40px 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 85px 0 0;
 }
 
 .contact-form {
-  width: 30vw;
-  height: 70vh;
+  width: 50%;
+  height: 90%;
   border: 2px solid #CCC;
   border-radius: 10px;
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.flex-form > div {
+  flex: 1 1 200px;
 }

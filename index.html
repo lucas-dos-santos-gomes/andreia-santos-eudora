@@ -113,13 +113,17 @@
             <div class="login-box">
               <h2>Mande um E-mail</h2>
               <form>
-                <div class="user-box">
-                  <input type="text" name="username" id="username" placeholder="Nome Sobrenome" required />
-                  <label>Nome completo</label>
-                </div>
-                <div class="user-box">
-                  <input type="email" name="email" id="email" placeholder="user@email.com" required />
-                  <label>E-mail</label>
+                <div class="flex-form">
+                  <div class="user-box">
+                    <input type="text" name="username" id="username" placeholder="Nome Sobrenome" required />
+                    <label>Nome completo</label>
+                    <span></span>
+                  </div>
+                  <div class="user-box">
+                    <input type="email" name="email" id="email" placeholder="user@email.com" required />
+                    <label>E-mail</label>
+                    <span></span>
+                  </div>
                 </div>
                 <div class="user-box">
                   <input type="text" name="" placeholder="--- Escolha uma opção ---" list="subject" required />
@@ -131,6 +135,7 @@
                     <option>Pedido de compra</option>
                     <option>Parceria</option>
                   </datalist>
+                  <span></span>
                 </div>
 
                 <a href="#">
@@ -142,12 +147,6 @@
                 </a>
               </form>
             </div>
-            <!-- <div class="field">
-              <input type="text" name="first-name" autocomplete="off" required />
-              <label for="first-name" class="label-wrapper">
-                <span class="label-text">First name</span>
-              </label>
-            </div> -->
           </div>
         </div>
       </div>
