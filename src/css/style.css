@@ -440,9 +440,13 @@ html {
 
 .contact-form {
   width: 50%;
-  height: 90%;
   border: 2px solid #CCC;
   border-radius: 10px;
+}
+
+.form_contact {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-form {
@@ -453,4 +457,15 @@ html {
 
 .flex-form > div {
   flex: 1 1 200px;
+}
+
+.user-box textarea {
+  border-radius: 10px;
+  background-color: #682FA8;
+  resize: none;
+  border: none;
+}
+
+.contact-form_button {
+  align-self: start;
 }

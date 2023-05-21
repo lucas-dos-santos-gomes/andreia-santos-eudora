@@ -112,22 +112,22 @@
           <div class="contact-form">
             <div class="login-box">
               <h2>Mande um E-mail</h2>
-              <form>
+              <form class="form_contact">
                 <div class="flex-form">
                   <div class="user-box">
-                    <input type="text" name="username" id="username" placeholder="Nome Sobrenome" required />
-                    <label>Nome completo</label>
+                    <input type="text" name="username" id="username" class="" placeholder="Nome Sobrenome" spellcheck="false" required />
+                    <label for="username">Nome completo</label>
                     <span></span>
                   </div>
                   <div class="user-box">
-                    <input type="email" name="email" id="email" placeholder="user@email.com" required />
-                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="user@email.com" spellcheck="false" required />
+                    <label for="email">E-mail</label>
                     <span></span>
                   </div>
                 </div>
                 <div class="user-box">
-                  <input type="text" name="" placeholder="--- Escolha uma opção ---" list="subject" required />
-                  <label>Assunto</label>
+                  <input type="text" name="subject" id="subject" placeholder="--- Escolha uma opção ---" list="subject" required />
+                  <label for="subject">Assunto</label>
                   <datalist id="subject">
                     <option>Dúvida</option>
                     <option>Feedback</option>
@@ -138,7 +138,12 @@
                   <span></span>
                 </div>
 
-                <a href="#">
+                <div class="user-box">
+                  <textarea name="text-area" id="text-area" class="input-focus" rows="4" placeholder="Escreva a mensagem aqui" required></textarea>
+                  <label for="text-area">Mensagem</label>
+                </div>
+
+                <a href="#" class="contact-form_button">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -158,8 +163,9 @@
   
   <div id="scripts">
     <script src="./src/js/script.js"></script>
-    <script src="./src/js/products-carousel.js"></script>
     <script src="./src/js/header-scroll.js"></script>
+    <script src="./src/js/products-carousel.js"></script>
+    <script src="./src/js/valid-input.js"></script>
     <script src="./src/js/fixed-whats.js"></script>
   </div>
 </body>

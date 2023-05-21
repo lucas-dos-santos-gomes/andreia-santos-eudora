@@ -102,7 +102,7 @@
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
+  margin-top: 20px;
   letter-spacing: 4px
 }
 
@@ -194,4 +194,28 @@
   50%,100% {
     bottom: 100%;
   }
+}
+
+.login-box .user-box textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.login-box .user-box textarea ~ label {
+  left: 10px;
+}
+
+.login-box .user-box textarea:not(textarea:focus)::placeholder {
+  color: transparent;
+}
+
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:valid ~ label {
+  top: -25px;
+  left: 0;
+  color: #FFC84A;
+  font-size: 12px;
 }

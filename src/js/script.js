@@ -15,3 +15,12 @@ function addListItem() {
 for(let i = 0; i < 10; i++) {
   addListItem();
 }
+
+// function teste() {
+//   console.log(input.validity.valid);
+// }
+
+// const input = document.querySelector("input[type=email]");
+// console.log(input);
+
+// input.onkeydown = teste;
