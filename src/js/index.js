@@ -1,4 +1,4 @@
-import regex from "./name-regex.js";
+import regex, { nameRegex } from "./name-regex.js";
 
 /* AUTOMATIC PRODUCTS LIST */
 const productsList = document.querySelector(".products-list");
@@ -20,7 +20,6 @@ for(let i = 0; i < 10; i++) {
 }
 
 /* REGEX */
-const nameRegex = document.querySelectorAll(".name-regex");
 nameRegex.forEach(input => {
   input.addEventListener("keypress", e => {
     regex(e);
