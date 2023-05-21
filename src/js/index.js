@@ -1,3 +1,6 @@
+import regex from "./name-regex.js";
+
+/* AUTOMATIC PRODUCTS LIST */
 const productsList = document.querySelector(".products-list");
 function addListItem() {
   productsList.innerHTML += (`
@@ -16,11 +19,10 @@ for(let i = 0; i < 10; i++) {
   addListItem();
 }
 
-// function teste() {
-//   console.log(input.validity.valid);
-// }
-
-// const input = document.querySelector("input[type=email]");
-// console.log(input);
-
-// input.onkeydown = teste;
+/* REGEX */
+const nameRegex = document.querySelectorAll(".name-regex");
+nameRegex.forEach(input => {
+  input.addEventListener("keypress", e => {
+    regex(e);
+  });
+});
