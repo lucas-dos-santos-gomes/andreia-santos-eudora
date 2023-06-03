@@ -442,6 +442,10 @@ html {
   font-size: 2.5rem;
 }
 
+.contact-info_list-items img {
+  width: 100px;
+}
+
 .contact-form {
   width: 50%;
   border: 2px solid #CCC;
