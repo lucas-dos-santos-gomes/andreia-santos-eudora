@@ -10,7 +10,6 @@ function addListItem() {
       <button class="button-put-bag">+ Adicionar na sacola</button>
     </li>
   `);
-  console.log(productsList);
 }
 for (let i = 0; i < 20; i++) {
   addListItem();
