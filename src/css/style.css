@@ -457,6 +457,19 @@ html {
   color: #FFF;
 }
 
+.contact-info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info_list-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
 .contact-info_list-items img {
   width: 70px;
 }
