@@ -200,6 +200,12 @@ html {
 }
 
 /* PRODUCTS */
+.products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .products_title-content {
   display: flex;
   align-items: center;
