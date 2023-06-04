@@ -444,12 +444,21 @@ html {
   padding: 85px 0 0;
 }
 
+.contact-info {
+  width: 50%;
+}
+
 .contact-info h2 {
+  width: 80%;
   font-size: 2.5rem;
+  border-bottom: 3px solid;
+  padding: 0 0 10px;
+  margin: 0 0 30px;
+  color: #FFF;
 }
 
 .contact-info_list-items img {
-  width: 100px;
+  width: 70px;
 }
 
 .contact-form {
