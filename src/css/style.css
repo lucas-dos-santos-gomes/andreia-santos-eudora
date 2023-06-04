@@ -472,6 +472,11 @@ html {
 
 .contact-info_list-items img {
   width: 70px;
+  transition: .2s;
+}
+
+.contact-info_list-items img:hover {
+  transform: scale(1.15);
 }
 
 .contact-form {
