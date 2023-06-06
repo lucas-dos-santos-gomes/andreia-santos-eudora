@@ -109,77 +109,79 @@
       <a name="contact"></a>
       <div class="container">
         <section class="contact_container sections-container">
-          <div class="contact-info">
-            <h2>Entre em contato</h2>
-            <ul class="contact-info_list">
-              <li class="contact-info_list-items">
-                <a href="https://www.instagram.com/andreiasantos.eudora/">
-                  <img src="./src/img/icons/icon-instagram.png" alt="Logo do Instagram" />
-                </a>
-                <p>@andreiasantos.eudora</p>
-              </li>
-              <li class="contact-info_list-items">
-                <a href="https://www.facebook.com/andreiasantos.eudora">
-                  <img src="./src/img/icons/icon-facebook.png" alt="Logo do Facebook">
-                </a>
-                <p>andreiasantos.eudora</p>
-              </li>
-              <li class="contact-info_list-items">
-                <a href="https://api.whatsapp.com/send?phone=5511985681416&text=Olá, desejo fazer um pedido de produtos!">
-                  <img src="./src/img/icons/icon-whatsapp.png" alt="Logo do WhatsApp">
-                </a>
-                <p>+55 (11) 98568-1416</p>
-              </li>
-              <li class="contact-info_list-items">
-                <a href="mailto:deia.lu@gmail.com">
-                  <img src="./src/img/icons/icon-gmail.png" alt="Logo do Gmail">
-                </a>
-                <p>deia.lu@gmail.com</p>
-              </li>
-            </ul>
-          </div>
-          <div class="contact-form">
-            <div class="login-box">
-              <h2>Mande um E-mail</h2>
-              <form class="form_contact">
-                <div class="flex-form">
-                  <div class="user-box">
-                    <input type="text" name="username" id="username" class="name-regex" placeholder="Nome Sobrenome" spellcheck="false" required />
-                    <label for="username">Nome completo</label>
-                    <span></span>
+          <div class="baseline-div">
+            <div class="contact-info">
+              <h2>Entre em contato</h2>
+              <ul class="contact-info_list">
+                <li class="contact-info_list-items">
+                  <a href="https://www.instagram.com/andreiasantos.eudora/">
+                    <img src="./src/img/icons/icon-instagram.png" alt="Logo do Instagram" />
+                  </a>
+                  <p>@andreiasantos.eudora</p>
+                </li>
+                <li class="contact-info_list-items">
+                  <a href="https://www.facebook.com/andreiasantos.eudora">
+                    <img src="./src/img/icons/icon-facebook.png" alt="Logo do Facebook">
+                  </a>
+                  <p>andreiasantos.eudora</p>
+                </li>
+                <li class="contact-info_list-items">
+                  <a href="https://api.whatsapp.com/send?phone=5511985681416&text=Olá, desejo fazer um pedido de produtos!">
+                    <img src="./src/img/icons/icon-whatsapp.png" alt="Logo do WhatsApp">
+                  </a>
+                  <p>+55 (11) 98568-1416</p>
+                </li>
+                <li class="contact-info_list-items">
+                  <a href="mailto:deia.lu@gmail.com">
+                    <img src="./src/img/icons/icon-gmail.png" alt="Logo do Gmail">
+                  </a>
+                  <p>deia.lu@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-form">
+              <div class="login-box">
+                <h2>Mande um E-mail</h2>
+                <form class="form_contact">
+                  <div class="flex-form">
+                    <div class="user-box">
+                      <input type="text" name="username" id="username" class="name-regex" placeholder="Nome Sobrenome" spellcheck="false" required />
+                      <label for="username">Nome completo</label>
+                      <span></span>
+                    </div>
+                    <div class="user-box">
+                      <input type="email" name="email" id="email" placeholder="user@email.com" spellcheck="false" required />
+                      <label for="email">E-mail</label>
+                      <span></span>
+                    </div>
                   </div>
                   <div class="user-box">
-                    <input type="email" name="email" id="email" placeholder="user@email.com" spellcheck="false" required />
-                    <label for="email">E-mail</label>
+                    <input type="text" name="subject" id="subject" placeholder="--- Escolha uma opção ---" list="subject" required />
+                    <label for="subject">Assunto</label>
+                    <datalist id="subject">
+                      <option>Dúvida</option>
+                      <option>Feedback</option>
+                      <option>Problema</option>
+                      <option>Pedido de compra</option>
+                      <option>Parceria</option>
+                    </datalist>
                     <span></span>
                   </div>
-                </div>
-                <div class="user-box">
-                  <input type="text" name="subject" id="subject" placeholder="--- Escolha uma opção ---" list="subject" required />
-                  <label for="subject">Assunto</label>
-                  <datalist id="subject">
-                    <option>Dúvida</option>
-                    <option>Feedback</option>
-                    <option>Problema</option>
-                    <option>Pedido de compra</option>
-                    <option>Parceria</option>
-                  </datalist>
-                  <span></span>
-                </div>
 
-                <div class="user-box">
-                  <textarea name="text-area" id="text-area" class="input-focus" rows="4" placeholder="Escreva a mensagem aqui" required></textarea>
-                  <label for="text-area">Mensagem</label>
-                </div>
+                  <div class="user-box">
+                    <textarea name="text-area" id="text-area" class="input-focus" rows="4" placeholder="Escreva a mensagem aqui" required></textarea>
+                    <label for="text-area">Mensagem</label>
+                  </div>
 
-                <a href="#" class="contact-form_button">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  Submit
-                </a>
-              </form>
+                  <a href="#" class="contact-form_button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                  </a>
+                </form>
+              </div>
             </div>
           </div>
         </section>

@@ -443,6 +443,12 @@ html {
   padding: 85px 0 0;
 }
 
+.baseline-div {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
 .contact-info {
   width: 50%;
 }
