@@ -515,3 +515,9 @@ html {
 .contact-form_button {
   align-self: start;
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+}
