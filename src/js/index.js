@@ -6,3 +6,7 @@ nameRegex.forEach(input => {
     regex(e);
   });
 });
+
+const copyYear = document.querySelector("#copy-year");
+let data = new Date();
+copyYear.innerHTML = data.getFullYear();
