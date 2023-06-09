@@ -1,8 +1,8 @@
 .wrapper{
   display: inline-flex;
+  gap: 20px;
 }
 .wrapper .icon{
-  margin: 0 20px;
   text-align: center;
   cursor: pointer;
   display: flex;
@@ -17,11 +17,10 @@
   display: block;
   height: 60px;
   width: 60px;
-  background: #fff;
+  color: #AAA;
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon span i{
@@ -29,6 +28,7 @@
   font-size: 25px;
 }
 .wrapper .icon .tooltip{
+  font-family: 'Poppins', sans-serif;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -44,7 +44,7 @@
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon:hover .tooltip{
-  top: -70px;
+  top: -55px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -60,7 +60,7 @@
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon:hover span{
-  color: #fff;
+  color: #FFF;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip{
