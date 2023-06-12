@@ -11,7 +11,8 @@
 }
 
 :root {
-  --roxo-escuro: #532685;
+  --dark-purple: #532685;
+  --light-purple: #9E4AFF;
 }
 
 *, p, a, li, h2, h3, h4, h5, h6, button, label {
@@ -32,7 +33,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--roxo-escuro);
+  background-color: var(--dark-purple);
   border-radius: 20px;
   border: 3px solid #070d12;
 }
@@ -57,7 +58,7 @@ html {
 }
 
 .header.active {
-  background-color: var(--roxo-escuro);
+  background-color: var(--dark-purple);
   position: fixed;
   z-index: 10;
 }
@@ -146,7 +147,7 @@ html {
 
 /* MAIN */
 .main_top {
-  background: linear-gradient(135deg, #682FA8, #9e4aff 97%);
+  background: linear-gradient(135deg, #682FA8, var(--light-purple) 97%);
   height: 100vh;
 }
 
@@ -330,15 +331,15 @@ html {
   padding: 10px 0;
   font-size: 14px;
   text-transform: uppercase;
-  border-color: var(--roxo-escuro);
-  color: var(--roxo-escuro);
+  border-color: var(--dark-purple);
+  color: var(--dark-purple);
   cursor: pointer;
   transition: .4s;
 }
 
 .button-put-bag:hover {
   transform: scale(1.05);
-  background-color: var(--roxo-escuro);
+  background-color: var(--dark-purple);
   color: #FFF;
 }
 
@@ -355,7 +356,7 @@ html {
   padding: 15px 20px;
   margin: auto;
   border-radius: 30px;
-  background-color: var(--roxo-escuro);
+  background-color: var(--dark-purple);
   color: #FFF;
   transition: .3s;
 }
@@ -376,7 +377,7 @@ html {
   background-attachment: fixed;
   background-size: 60%;
   width: 100%;
-  background-color: var(--roxo-escuro);
+  background-color: var(--dark-purple);
   height: 100vh;
   padding: 85px 0;
   box-sizing: border-box;
@@ -438,7 +439,7 @@ html {
 
 /* CONTACT */
 .contact {
-  background-color: #9e4aff;
+  background-color: var(--light-purple);
 }
 
 .contact_container {
@@ -531,9 +532,9 @@ html {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #FFF;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer_image img {
@@ -556,7 +557,7 @@ html {
 }
 
 .footer .copyright a {
-  color: #9e4aff;
+  color: var(--light-purple);
   transition: .2s;
 }
 

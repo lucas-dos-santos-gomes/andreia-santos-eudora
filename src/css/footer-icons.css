@@ -1,6 +1,7 @@
 .wrapper{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .wrapper .icon{
   text-align: center;
