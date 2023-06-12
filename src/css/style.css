@@ -528,6 +528,10 @@ html {
   display: flex;
 }
 
+.footer-content-itens {
+  flex-grow: 1;
+}
+
 .footer_image img {
-  width: 90%;
+  width: 200px;
 }
