@@ -546,6 +546,10 @@ html {
   gap: 10px;
 }
 
+.footer-content-itens > ul > li.footer_first-link > a {
+  color: #FFF;
+}
+
 .footer-content-itens > ul > li > a {
   font-size: 20px;
   color: #999;
