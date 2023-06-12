@@ -521,7 +521,7 @@ html {
 .footer {
   background-color: #000;
   padding: 30px;
-  color: #AAA;
+  color: #999;
 }
 
 .footer-content {
@@ -534,4 +534,9 @@ html {
 
 .footer_image img {
   width: 200px;
+}
+
+.footer-content-itens > ul > li > a {
+  font-size: 20px;
+  color: #999;
 }
