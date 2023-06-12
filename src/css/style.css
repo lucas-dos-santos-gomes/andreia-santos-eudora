@@ -10,6 +10,10 @@
   src: url(../fonts/sofiapro/Fonts/SofiaPro-Regular.woff2);
 }
 
+:root {
+  --roxo-escuro: #532685;
+}
+
 *, p, a, li, h2, h3, h4, h5, h6, button, label {
   font-family: SofiaProRegular;
 }
@@ -28,7 +32,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #532685;
+  background-color: var(--roxo-escuro);
   border-radius: 20px;
   border: 3px solid #070d12;
 }
@@ -53,7 +57,7 @@ html {
 }
 
 .header.active {
-  background-color: #532685;
+  background-color: var(--roxo-escuro);
   position: fixed;
   z-index: 10;
 }
@@ -326,15 +330,15 @@ html {
   padding: 10px 0;
   font-size: 14px;
   text-transform: uppercase;
-  border-color: #532685;
-  color: #532685;
+  border-color: var(--roxo-escuro);
+  color: var(--roxo-escuro);
   cursor: pointer;
   transition: .4s;
 }
 
 .button-put-bag:hover {
   transform: scale(1.05);
-  background-color: #532685;
+  background-color: var(--roxo-escuro);
   color: #FFF;
 }
 
@@ -351,7 +355,7 @@ html {
   padding: 15px 20px;
   margin: auto;
   border-radius: 30px;
-  background-color: #532685;
+  background-color: var(--roxo-escuro);
   color: #FFF;
   transition: .3s;
 }
@@ -372,7 +376,7 @@ html {
   background-attachment: fixed;
   background-size: 60%;
   width: 100%;
-  background-color: #532685;
+  background-color: var(--roxo-escuro);
   height: 100vh;
   padding: 85px 0;
   box-sizing: border-box;
@@ -553,4 +557,9 @@ html {
 
 .footer .copyright a {
   color: #9e4aff;
+  transition: .2s;
+}
+
+.footer .copyright a:hover {
+  color: #6d13d4;
 }
