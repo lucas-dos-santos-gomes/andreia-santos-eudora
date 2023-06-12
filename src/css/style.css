@@ -523,3 +523,11 @@ html {
   padding: 30px;
   color: #AAA;
 }
+
+.footer-content {
+  display: flex;
+}
+
+.footer_image img {
+  width: 90%;
+}
