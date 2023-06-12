@@ -526,7 +526,7 @@ html {
 .footer {
   background-color: #000;
   padding: 30px 30px 20px;
-  color: #999;
+  color: #777;
 }
 
 .footer-content {
@@ -543,7 +543,7 @@ html {
 
 .footer-content-itens > ul {
   display: grid;
-  gap: 10px;
+  gap: 15px;
 }
 
 .footer-content-itens > ul > li.footer_first-link > a {
@@ -551,8 +551,29 @@ html {
 }
 
 .footer-content-itens > ul > li > a {
+  position: relative;
   font-size: 20px;
-  color: #999;
+  color: #777;
+  transition: .4s;
+}
+
+.footer-content-itens > ul > li > a:hover {
+  color: #FFF;
+}
+
+.footer-content-itens > ul > li > a::after {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #FFF;
+  transition: 0.4s;
+}
+
+.footer-content-itens > ul > li > a:hover::after {
+  width: 99%;
 }
 
 .footer .copyright {
