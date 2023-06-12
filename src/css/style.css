@@ -537,6 +537,12 @@ html {
   margin-bottom: 20px;
 }
 
+.footer_image {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
 .footer_image img {
   width: 200px;
 }
