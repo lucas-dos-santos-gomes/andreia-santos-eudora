@@ -1,6 +1,6 @@
 .wrapper{
   display: inline-flex;
-  gap: 20px;
+  gap: 2px;
 }
 .wrapper .icon{
   text-align: center;
