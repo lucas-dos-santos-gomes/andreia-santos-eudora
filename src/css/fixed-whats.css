@@ -17,6 +17,8 @@
   z-index: 9000;
 }
 
+#whats:hover { transform: scale(1.2); }
+
 @keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0,200,0, 1);
