@@ -17,6 +17,7 @@ function createFixedWhats() {
   tag_i.classList.add("my-float");
   
   tag_a.id = "whats";
+  tag_a.setAttribute("aria-label", "Ir para o WhatsApp");
   tag_a.setAttribute("href", `https://api.whatsapp.com/send?phone=5511985681416&text=${whatsText}`);
   tag_a.setAttribute("target", "_blank");
   tag_a.appendChild(tag_i);
