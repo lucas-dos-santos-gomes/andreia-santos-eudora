@@ -5,7 +5,7 @@ function importWhatsCSS() {
   document.head.appendChild(link);
 }
 
-function createFixedWhats() {
+export function createFixedWhats() {
   const divScripts = document.querySelector("#scripts");
   const tag_i = document.createElement("i");
   const tag_a = document.createElement("a");
@@ -26,5 +26,3 @@ function createFixedWhats() {
 
   importWhatsCSS();
 }
-
-createFixedWhats();
