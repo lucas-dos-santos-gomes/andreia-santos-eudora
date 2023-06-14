@@ -3,11 +3,13 @@
 @font-face {
   font-family: SofiaProLighter;
   src: url(../fonts/sofiapro/Fonts/sofiapro-light.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: SofiaProRegular;
   src: url(../fonts/sofiapro/Fonts/SofiaPro-Regular.woff2);
+  font-display: swap;
 }
 
 :root {
