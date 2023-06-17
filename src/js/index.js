@@ -15,3 +15,9 @@ copyYear.innerHTML = data.getFullYear();
 
 /* CREATE FIXED WHATS */
 createFixedWhats();
+
+/* TEST PRODUCTS DATABASE */
+import { siageProducts } from "./db-products.js";
+siageProducts.forEach(itens => {
+  console.log(itens.id);
+});
