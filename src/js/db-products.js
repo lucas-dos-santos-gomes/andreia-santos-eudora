@@ -30,5 +30,15 @@ export const tb_siageProducts = [
     discount: 0,
     value: 147.97,
     installments: 9
-  }
+  },
+  {
+    id: id++,
+    description: "O Combo Siàge Reconstrói os Fios entrega cabelos reconstruídos e resistentes à quebra desde o primeiro uso.",
+    imgSrc: "./src/img/products/siage_reconstroi-fios_shamp_cond.jpg",
+    imgAlt: "Combo Reconstrói os Fios",
+    title: "Combo Reconstrói os Fios: Shampoo 400ml + Condicionador 400ml",
+    discount: 0,
+    value: 120.98,
+    installments: 8
+  },
 ];
