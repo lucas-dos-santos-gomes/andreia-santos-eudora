@@ -20,9 +20,10 @@ class Product {
     this.installments = installments;
   }
 
-  // convertToString(number) {
-  //   return number.map(e => (e == ));
-  // }
+  convertToString(number) {
+    let string = number.toString();
+    return string.replace(".", ",");
+  }
 
   installmentCost() {
     let division = this.value / this.installments;
