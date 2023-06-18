@@ -1,3 +1,31 @@
+class Product {
+  constructor(id, brand) {
+    this.id = id;
+    this.brand = brand;
+  }
+
+  texts(description, title) {
+    this.description = description;
+    this.title = title;
+  }
+
+  image(src, alt) {
+    this.imgSrc = src;
+    this.imgAlt = alt;
+  }
+
+  value(discount, value, installments) {
+    this.discount = discount;
+    this.value = value;
+    this.installments = installments;
+  }
+
+  installmentCost() {
+    let division = this.value / this.installments;
+    return `${this.installments}x de R$ ${division}`;
+  }
+}
+
 let id = 1000;
 
 export const tb_divaProducts = [
