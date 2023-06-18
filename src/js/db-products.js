@@ -13,6 +13,16 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    description: "Para uma plástica capilar instantânea e fios extremamente macios, conheça a Máscara Capilar Hair-Plastia.",
+    imgSrc: "./src/img/products/siage-mascara-capilar-hair-plastia-E01644_.jpg",
+    imgAlt: "Máscara Capilar Hair-Plastia 250G",
+    title: "Máscara Capilar Hair-Plastia 250G",
+    discount: 0,
+    value: 67.99,
+    installments: 4
+  },
+  {
+    id: id++,
     description: "Com Bio-Hialurônico, os produtos agem em todas as camadas dos fios deixando o cabelo brilhante e macio.",
     imgSrc: "./src/img/products/siage-hair-plastia_shampoo-condicionador.jpg",
     imgAlt: "Siage Hair Plastia",
