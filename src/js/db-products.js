@@ -26,8 +26,8 @@ class Product {
   }
 
   installmentCost() {
-    let division = this.value / this.installments;
-    return `${this.installments}x de R$ ${division}`;
+    let division = (this.value / this.installments).toFixed(2);
+    return `${this.installments}x de R$ ${this.convertToString(division)}`;
   }
 }
 
