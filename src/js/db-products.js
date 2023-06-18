@@ -80,18 +80,11 @@ tb_siageProducts[9] = new Product(id++, "Siàge", 0, 67.99, 4);
 tb_siageProducts[9].texts("A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.", "Máscara Capilar Cauterização dos Fios 250g");
 tb_siageProducts[9].image("./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg", "Máscara Capilar - Cauterização dos Fios");
 
+tb_siageProducts[10] = new Product(id++, "Siàge", 0, 68.99, 4);
+tb_siageProducts[10].texts("Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!", "Máscara Capilar Nutri Óleos Poderosos 250g");
+tb_siageProducts[10].image("./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg", "Máscara Capilar Nutri Óleos Poderosos");
+
 /*
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.",
-    imgSrc: "./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg",
-    imgAlt: "Máscara Capilar - Cauterização dos Fios",
-    title: "Máscara Capilar Cauterização dos Fios 250g",
-    discount: 0,
-    value: 67.99,
-    installments: 4,
-  },
   {
     id: id++,
     brand: "Siàge",
