@@ -57,7 +57,7 @@ tb_siageProducts[3].texts("Com Bio-Hialurônico, os produtos agem em todas as ca
 tb_siageProducts[3].image("./src/img/products/siage-hair-plastia_shampoo-condicionador.jpg", "Siage Hair Plastia");
 
 tb_siageProducts[4] = new Product(id++, "Siàge", 0, 147.97, 9);
-tb_siageProducts[4].texts("Com ingredientes poderosos, o combo traz 3 produtos que recupera o cabelo dos danos com a terapia capilar.", "Combo Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g");
+tb_siageProducts[4].texts("Com ingredientes poderosos, o combo traz 3 produtos que recupera o cabelo dos danos com a terapia capilar.", "Combo Cica-Therapy: Shampoo + Condicionador + Máscara Capilar");
 tb_siageProducts[4].image("./src/img/products/combo-siage-cica-therapy_shampoo_condicionador_mascara_.jpg", "Combo Siage Cica Therapy");
 
 tb_siageProducts[5] = new Product(id++, "Siàge", 0, 120.98, 8);

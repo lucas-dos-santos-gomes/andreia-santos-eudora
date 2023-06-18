@@ -2,26 +2,14 @@ import { tb_divaProducts, tb_siageProducts } from "./db-products.js";
 
 const allTables = tb_divaProducts.concat(tb_siageProducts);
 const productsList = document.querySelector(".products-list");
-/*function addListItem() {
-  productsList.innerHTML += (`
-    <li class="products-list_items" title="O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.">
-      <img class="product-image" src="./src/img/products/siage_nutri_rose_shamp_cond.jpg" alt="Combo nutri rose com shampoo e condicionador" draggable="false" />
-      <h3 class="product-title">Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml</h3>
-      <p class="product-value-discount">R$ 127,98</p>
-      <p class="product-value">R$ 112,98</p>
-      <p class="product-value-installment">7x de R$ 16,14</p>
-      <button class="button-put-bag">+ Adicionar na sacola</button>
-    </li>
-  `);
-}*/
 allTables.forEach(object => {
   productsList.innerHTML += (`
-    <li class="products-list_items" title=${object.description}>
-      <img class="product-image" src=${object.imgSrc} alt="Combo nutri rose com shampoo e condicionador" draggable="false" />
-      <h3 class="product-title">Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml</h3>
-      <p class="product-value-discount">R$ 127,98</p>
-      <p class="product-value">R$ 112,98</p>
-      <p class="product-value-installment">7x de R$ 16,14</p>
+    <li class="${object.id} products-list_items" title="${object.description}">
+      <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
+      <h3 class="product-title">${object.title}</h3>
+      ${(object.discount > 0)? `<p class="product-value-discount">R$ 127,98</p>` : ""}
+      <p class="product-value">${object.value}</p>
+      <p class="product-value-installment">${object.installmentCost()}</p>
       <button class="button-put-bag">+ Adicionar na sacola</button>
     </li>
   `);
