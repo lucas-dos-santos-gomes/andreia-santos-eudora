@@ -64,22 +64,15 @@ tb_siageProducts[5] = new Product(id++, "Siàge", 0, 120.98, 8);
 tb_siageProducts[5].texts("O Combo Siàge Reconstrói os Fios entrega cabelos reconstruídos e resistentes à quebra desde o primeiro uso.", "Combo Reconstrói os Fios: Shampoo 400ml + Condicionador 400ml");
 tb_siageProducts[5].image("./src/img/products/siage_reconstroi-fios_shamp_cond.jpg", "Combo Reconstrói os Fios");
 
-tb_siageProducts[x] = new Product(id++, "Siàge", 217.96, 197.96, 10);
-tb_siageProducts[x].texts("O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.", "Combo Reconstrói os Fios (4 itens)");
-tb_siageProducts[x].image("./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg", "Combo de 4 itens da linha Reconstrói os Fios");
+tb_siageProducts[6] = new Product(id++, "Siàge", 217.96, 197.96, 10);
+tb_siageProducts[6].texts("O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.", "Combo Reconstrói os Fios (4 itens)");
+tb_siageProducts[6].image("./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg", "Combo de 4 itens da linha Reconstrói os Fios");
+
+tb_siageProducts[7] = new Product(id++, "Siàge", 0, 67.99, 4);
+tb_siageProducts[7].texts("Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.", "Eudora Cica Therapy - Máscara Capilar 250g");
+tb_siageProducts[7].image("./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg", "Máscara Capilar Cica Theray");
 
 /*
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.",
-    imgSrc: "./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg",
-    imgAlt: "Combo Reconstrói os Fios (4 itens)",
-    title: "Combo Reconstrói os Fios (4 itens)",
-    discount: 217.96,
-    value: 197.96,
-    installments: 10,
-  },
   {
     id: id++,
     brand: "Siàge",
