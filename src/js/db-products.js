@@ -1,6 +1,6 @@
 let id = 1000;
 
-export const tb_topSellingProducts = [
+export const tb_divaProducts = [
   {
     id: id++,
     brand: "Diva",
@@ -12,6 +12,9 @@ export const tb_topSellingProducts = [
     value: 108.90,
     installments: 7,
   },
+];
+
+export const tb_siageProducts = [
   {
     id: id++,
     brand: "Siàge",
