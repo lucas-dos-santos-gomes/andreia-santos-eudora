@@ -15,5 +15,3 @@ copyYear.innerHTML = data.getFullYear();
 
 /* CREATE FIXED WHATS */
 createFixedWhats();
-
-/* TEST PRODUCTS DATABASE */

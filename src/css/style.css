@@ -206,6 +206,10 @@ html {
   box-sizing: border-box;
 }
 
+strong {
+  letter-spacing: 2px;
+}
+
 /* PRODUCTS */
 .products-container {
   display: flex;
