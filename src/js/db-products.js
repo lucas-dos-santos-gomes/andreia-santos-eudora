@@ -72,18 +72,11 @@ tb_siageProducts[7] = new Product(id++, "Siàge", 0, 67.99, 4);
 tb_siageProducts[7].texts("Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.", "Eudora Cica Therapy - Máscara Capilar 250g");
 tb_siageProducts[7].image("./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg", "Máscara Capilar Cica Theray");
 
+tb_siageProducts[8] = new Product(id++, "Siàge", 67.99, 59.99, 4);
+tb_siageProducts[8].texts("Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.", "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)");
+tb_siageProducts[8].image("./src/img/products/siage-acelera-o-crescimento_a.jpg", "Nova versão da Máscara Capilar Acelera o Crescimento");
+
 /*
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.",
-    imgSrc: "./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg",
-    imgAlt: "Máscara Capilar Cica Theray",
-    title: "Eudora Cica Therapy - Máscara Capilar 250g",
-    discount: 0,
-    value: 67.99,
-    installments: 4,
-  },
   {
     id: id++,
     brand: "Siàge",
