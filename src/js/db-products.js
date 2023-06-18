@@ -1,6 +1,17 @@
 let id = 1000;
 
-export const tb_siageProducts = [
+export const tb_topSellingProducts = [
+  {
+    id: id++,
+    brand: "Diva",
+    description: "O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.",
+    imgSrc: "./src/img/products/estojo_diva_miniaturas.jpg",
+    imgAlt: "Estojo Diva com dois produtos em Miniaturas",
+    title: "Kit Presente Miniaturas (2 itens)",
+    discount: 0,
+    value: 108.90,
+    installments: 7,
+  },
   {
     id: id++,
     brand: "Siàge",
@@ -11,6 +22,17 @@ export const tb_siageProducts = [
     discount: 127.98,
     value: 112.98,
     installments: 7,
+  },
+  {
+    id: id++,
+    brand: "Siàge",
+    description: "O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.",
+    imgSrc: "./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg",
+    imgAlt: "Combo Refil Nutri Rosé",
+    title: "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml",
+    discount: 0,
+    value: 98.98,
+    installments: 6,
   },
   {
     id: id++,
@@ -66,17 +88,6 @@ export const tb_siageProducts = [
     discount: 217.96,
     value: 197.96,
     installments: 10,
-  },
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.",
-    imgSrc: "./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg",
-    imgAlt: "Combo Refil Nutri Rosé",
-    title: "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml",
-    discount: 0,
-    value: 98.98,
-    installments: 6,
   },
   {
     id: id++,
