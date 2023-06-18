@@ -1,7 +1,10 @@
 class Product {
-  constructor(id, brand) {
+  constructor(id, brand, discount, value, installments) {
     this.id = id;
     this.brand = brand;
+    this.discount = discount;
+    this.value = value;
+    this.installments = installments;
   }
 
   texts(description, title) {
@@ -12,12 +15,6 @@ class Product {
   image(src, alt) {
     this.imgSrc = src;
     this.imgAlt = alt;
-  }
-
-  value(discount, value, installments) {
-    this.discount = discount;
-    this.value = value;
-    this.installments = installments;
   }
 
   convertToString(number) {
@@ -34,36 +31,24 @@ class Product {
 let id = 1000;
 
 export const tb_divaProducts = [];
-tb_divaProducts[0] = new Product(id++, "Diva");
+
+tb_divaProducts[0] = new Product(id++, "Diva", 0, 108.90, 7);
 tb_divaProducts[0].texts("O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.", "Kit Presente Miniaturas (2 itens)");
 tb_divaProducts[0].image("./src/img/products/estojo_diva_miniaturas.jpg", "Estojo Diva com dois produtos em Miniaturas");
-tb_divaProducts[0].value(0, 108.90, 7);
 
 id = 1100;
 
-export const tb_siageProducts = [
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.",
-    imgSrc: "./src/img/products/siage_nutri_rose_shamp_cond.jpg",
-    imgAlt: "Combo Nutri Rose",
-    title: "Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml",
-    discount: 127.98,
-    value: 112.98,
-    installments: 7,
-  },
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.",
-    imgSrc: "./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg",
-    imgAlt: "Combo Refil Nutri Rosé",
-    title: "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml",
-    discount: 0,
-    value: 98.98,
-    installments: 6,
-  },
+export const tb_siageProducts = [];
+
+tb_siageProducts[0] = new Product(id++, "Siàge", 127.98, 112.98, 7);
+tb_siageProducts[0].texts("O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.", "Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml");
+tb_siageProducts[0].image("./src/img/products/siage_nutri_rose_shamp_cond.jpg", "Combo Nutri Rose");
+
+tb_siageProducts[1] = new Product(id++, "Siàge", 0, 98.98, 6);
+tb_siageProducts[1].texts("O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.", "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml");
+tb_siageProducts[1].image("./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg", "Combo Refil Nutri Rosé");
+
+/*
   {
     id: id++,
     brand: "Siàge",
@@ -174,4 +159,56 @@ export const tb_siageProducts = [
     value: 0,
     installments: 0,
   },
-];
+*/
+
+/*
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+
+tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x].texts("", "");
+tb_siageProducts[x].image("./src/img/products/.jpg", "");
+tb_siageProducts[x].values(0, 0, 1);
+*/
