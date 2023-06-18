@@ -76,18 +76,11 @@ tb_siageProducts[8] = new Product(id++, "Siàge", 67.99, 59.99, 4);
 tb_siageProducts[8].texts("Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.", "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)");
 tb_siageProducts[8].image("./src/img/products/siage-acelera-o-crescimento_a.jpg", "Nova versão da Máscara Capilar Acelera o Crescimento");
 
+tb_siageProducts[9] = new Product(id++, "Siàge", 0, 67.99, 4);
+tb_siageProducts[9].texts("A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.", "Máscara Capilar Cauterização dos Fios 250g");
+tb_siageProducts[9].image("./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg", "Máscara Capilar - Cauterização dos Fios");
+
 /*
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.",
-    imgSrc: "./src/img/products/siage-acelera-o-crescimento_a.jpg",
-    imgAlt: "Nova versão da Máscara Capilar Acelera o Crescimento",
-    title: "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)",
-    discount: 67.99,
-    value: 59.99,
-    installments: 4,
-  },
   {
     id: id++,
     brand: "Siàge",
