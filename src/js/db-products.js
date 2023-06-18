@@ -33,25 +33,11 @@ class Product {
 
 let id = 1000;
 
-
-export const tb_divaProducts = new Product(id++, "Diva");
-tb_divaProducts.texts("O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.", "Kit Presente Miniaturas (2 itens)");
-tb_divaProducts.image("./src/img/products/estojo_diva_miniaturas.jpg", "Estojo Diva com dois produtos em Miniaturas");
-tb_divaProducts.value(0, 108.90, 7);
-
-/*export const tb_divaProducts = [
-  {
-    id: id++,
-    brand: "Diva",
-    description: "O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.",
-    imgSrc: "./src/img/products/estojo_diva_miniaturas.jpg",
-    imgAlt: "Estojo Diva com dois produtos em Miniaturas",
-    title: "Kit Presente Miniaturas (2 itens)",
-    discount: 0,
-    value: 108.90,
-    installments: 7,
-  },
-];*/
+export const tb_divaProducts = [];
+tb_divaProducts[0] = new Product(id++, "Diva");
+tb_divaProducts[0].texts("O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.", "Kit Presente Miniaturas (2 itens)");
+tb_divaProducts[0].image("./src/img/products/estojo_diva_miniaturas.jpg", "Estojo Diva com dois produtos em Miniaturas");
+tb_divaProducts[0].value(0, 108.90, 7);
 
 id = 1100;
 
