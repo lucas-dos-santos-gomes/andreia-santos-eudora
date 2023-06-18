@@ -20,6 +20,10 @@ class Product {
     this.installments = installments;
   }
 
+  // convertToString(number) {
+  //   return number.map(e => (e == ));
+  // }
+
   installmentCost() {
     let division = this.value / this.installments;
     return `${this.installments}x de R$ ${division}`;
@@ -28,7 +32,13 @@ class Product {
 
 let id = 1000;
 
-export const tb_divaProducts = [
+
+export const tb_divaProducts = new Product(id++, "Diva");
+tb_divaProducts.texts("O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.", "Kit Presente Miniaturas (2 itens)");
+tb_divaProducts.image("./src/img/products/estojo_diva_miniaturas.jpg", "Estojo Diva com dois produtos em Miniaturas");
+tb_divaProducts.value(0, 108.90, 7);
+
+/*export const tb_divaProducts = [
   {
     id: id++,
     brand: "Diva",
@@ -40,7 +50,7 @@ export const tb_divaProducts = [
     value: 108.90,
     installments: 7,
   },
-];
+];*/
 
 id = 1100;
 
