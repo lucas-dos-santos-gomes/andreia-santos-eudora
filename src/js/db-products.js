@@ -60,6 +60,10 @@ tb_siageProducts[4] = new Product(id++, "Siàge", 0, 147.97, 9);
 tb_siageProducts[4].texts("Com ingredientes poderosos, o combo traz 3 produtos que recupera o cabelo dos danos com a terapia capilar.", "Combo Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g");
 tb_siageProducts[4].image("./src/img/products/combo-siage-cica-therapy_shampoo_condicionador_mascara_.jpg", "Combo Siage Cica Therapy");
 
+tb_siageProducts[5] = new Product(id++, "Siàge", 0, 120.98, 8);
+tb_siageProducts[5].texts("O Combo Siàge Reconstrói os Fios entrega cabelos reconstruídos e resistentes à quebra desde o primeiro uso.", "Combo Reconstrói os Fios: Shampoo 400ml + Condicionador 400ml");
+tb_siageProducts[5].image("./src/img/products/siage_reconstroi-fios_shamp_cond.jpg", "Combo Reconstrói os Fios");
+
 /*
   {
     id: id++,
@@ -141,38 +145,7 @@ tb_siageProducts[4].image("./src/img/products/combo-siage-cica-therapy_shampoo_c
 */
 
 /*
-tb_siageProducts[x] = new Product(id++, "Siàge");
+tb_siageProducts[x] = new Product(id++, "Siàge", 0, 0, 1);
 tb_siageProducts[x].texts("", "");
 tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
-
-tb_siageProducts[x] = new Product(id++, "Siàge");
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-tb_siageProducts[x].values(0, 0, 1);
 */
