@@ -9,17 +9,17 @@ export const tb_siageProducts = [
     title: "Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml",
     discount: 127.98,
     value: 112.98,
-    installments: 7
+    installments: 7,
   },
   {
     id: id++,
     description: "Para uma plástica capilar instantânea e fios extremamente macios, conheça a Máscara Capilar Hair-Plastia.",
-    imgSrc: "./src/img/products/siage-mascara-capilar-hair-plastia-E01644_.jpg",
+    imgSrc: "./src/img/products/siage-mascara-capilar-hair-plastia.jpg",
     imgAlt: "Máscara Capilar Hair-Plastia 250G",
     title: "Máscara Capilar Hair-Plastia 250G",
     discount: 0,
     value: 67.99,
-    installments: 4
+    installments: 4,
   },
   {
     id: id++,
@@ -29,7 +29,7 @@ export const tb_siageProducts = [
     title: "Combo Hair Plastia Shampoo + Máscara + Condicionador",
     discount: 0,
     value: 147.97,
-    installments: 9
+    installments: 9,
   },
   {
     id: id++,
@@ -39,7 +39,7 @@ export const tb_siageProducts = [
     title: "Combo Cica-Therapy: Shampoo 250ml + Condicionador 200ml + Máscara Capilar 250g",
     discount: 0,
     value: 147.97,
-    installments: 9
+    installments: 9,
   },
   {
     id: id++,
@@ -49,7 +49,7 @@ export const tb_siageProducts = [
     title: "Combo Reconstrói os Fios: Shampoo 400ml + Condicionador 400ml",
     discount: 0,
     value: 120.98,
-    installments: 8
+    installments: 8,
   },
   {
     id: id++,
@@ -59,7 +59,7 @@ export const tb_siageProducts = [
     title: "Combo Reconstrói os Fios (4 itens)",
     discount: 217.96,
     value: 197.96,
-    installments: 10
+    installments: 10,
   },
   {
     id: id++,
@@ -69,6 +69,56 @@ export const tb_siageProducts = [
     title: "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml",
     discount: 0,
     value: 98.98,
-    installments: 6
-  }
+    installments: 6,
+  },
+  {
+    id: id++,
+    description: "Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.",
+    imgSrc: "./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg",
+    imgAlt: "Máscara Capilar Cica Theray",
+    title: "Eudora Cica Therapy - Máscara Capilar 250g",
+    discount: 0,
+    value: 67.99,
+    installments: 4,
+  },
+  {
+    id: id++,
+    description: "Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.",
+    imgSrc: "./src/img/products/siage-acelera-o-crescimento_a.jpg",
+    imgAlt: "Nova versão da Máscara Capilar Acelera o Crescimento",
+    title: "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)",
+    discount: 67.99,
+    value: 59.99,
+    installments: 4,
+  },
+  {
+    id: id++,
+    description: "A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.",
+    imgSrc: "./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg",
+    imgAlt: "Máscara Capilar - Cauterização dos Fios",
+    title: "Máscara Capilar Cauterização dos Fios 250g",
+    discount: 0,
+    value: 67.99,
+    installments: 4,
+  },
+  {
+    id: id++,
+    description: "Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!",
+    imgSrc: "./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg",
+    imgAlt: "Máscara Capilar Nutri Óleos Poderosos",
+    title: "Máscara Capilar Nutri Óleos Poderosos 250g",
+    discount: 0,
+    value: 68.99,
+    installments: 4,
+  },
+  {
+    id: id++,
+    description: "",
+    imgSrc: "./src/img/products/.jpg",
+    imgAlt: "",
+    title: "",
+    discount: 0,
+    value: 0,
+    installments: 0,
+  },
 ];
