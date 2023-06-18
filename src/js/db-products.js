@@ -14,6 +14,8 @@ export const tb_divaProducts = [
   },
 ];
 
+id = 1100;
+
 export const tb_siageProducts = [
   {
     id: id++,

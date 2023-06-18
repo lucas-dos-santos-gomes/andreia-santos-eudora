@@ -19,5 +19,6 @@ createFixedWhats();
 /* TEST PRODUCTS DATABASE */
 import { tb_siageProducts, tb_divaProducts } from "./db-products.js";
 tb_siageProducts.forEach(itens => {
-  console.log(itens.installments);
+  console.log("Diva: " + tb_divaProducts[0].id);
+  console.log("Siage: " + itens.id);
 });
