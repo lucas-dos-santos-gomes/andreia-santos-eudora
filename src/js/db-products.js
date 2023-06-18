@@ -83,34 +83,3 @@ tb_siageProducts[9].image("./src/img/products/mascara-capilar-siage-cauterizacao
 tb_siageProducts[10] = new Product(id++, "Siàge", 0, 68.99, 4);
 tb_siageProducts[10].texts("Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!", "Máscara Capilar Nutri Óleos Poderosos 250g");
 tb_siageProducts[10].image("./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg", "Máscara Capilar Nutri Óleos Poderosos");
-
-/*
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!",
-    imgSrc: "./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg",
-    imgAlt: "Máscara Capilar Nutri Óleos Poderosos",
-    title: "Máscara Capilar Nutri Óleos Poderosos 250g",
-    discount: 0,
-    value: 68.99,
-    installments: 4,
-  },
-  {
-    id: id++,
-    brand: "Siàge",
-    description: "",
-    imgSrc: "./src/img/products/.jpg",
-    imgAlt: "",
-    title: "",
-    discount: 0,
-    value: 0,
-    installments: 0,
-  },
-*/
-
-/*
-tb_siageProducts[x] = new Product(id++, "Siàge", 0, 0, 1);
-tb_siageProducts[x].texts("", "");
-tb_siageProducts[x].image("./src/img/products/.jpg", "");
-*/
