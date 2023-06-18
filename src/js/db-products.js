@@ -41,4 +41,24 @@ export const tb_siageProducts = [
     value: 120.98,
     installments: 8
   },
+  {
+    id: id++,
+    description: "O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.",
+    imgSrc: "./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg",
+    imgAlt: "Combo Reconstrói os Fios (4 itens)",
+    title: "Combo Reconstrói os Fios (4 itens)",
+    discount: 217.96,
+    value: 197.96,
+    installments: 10
+  },
+  {
+    id: id++,
+    description: "O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.",
+    imgSrc: "./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg",
+    imgAlt: "Combo Refil Nutri Rosé",
+    title: "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml",
+    discount: 0,
+    value: 98.98,
+    installments: 6
+  }
 ];
