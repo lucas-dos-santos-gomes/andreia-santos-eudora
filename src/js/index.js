@@ -25,8 +25,3 @@ tb_siageProducts.forEach(itens => {
 
 console.log(tb_divaProducts);
 console.log(tb_divaProducts.installmentCost());
-
-let n = 0;
-let s = n.toString();
-console.log(typeof n);
-console.log(typeof s);
