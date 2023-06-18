@@ -3,6 +3,7 @@ let id = 1000;
 export const tb_siageProducts = [
   {
     id: id++,
+    brand: "Siàge",
     description: "O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.",
     imgSrc: "./src/img/products/siage_nutri_rose_shamp_cond.jpg",
     imgAlt: "Combo Nutri Rose",
@@ -13,6 +14,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Para uma plástica capilar instantânea e fios extremamente macios, conheça a Máscara Capilar Hair-Plastia.",
     imgSrc: "./src/img/products/siage-mascara-capilar-hair-plastia.jpg",
     imgAlt: "Máscara Capilar Hair-Plastia 250G",
@@ -23,6 +25,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Com Bio-Hialurônico, os produtos agem em todas as camadas dos fios deixando o cabelo brilhante e macio.",
     imgSrc: "./src/img/products/siage-hair-plastia_shampoo-condicionador.jpg",
     imgAlt: "Siage Hair Plastia",
@@ -33,6 +36,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Com ingredientes poderosos, o combo traz 3 produtos que recupera o cabelo dos danos com a terapia capilar.",
     imgSrc: "./src/img/products/combo-siage-cica-therapy_shampoo_condicionador_mascara_.jpg",
     imgAlt: "Combo Siage Cica Therapy",
@@ -43,6 +47,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "O Combo Siàge Reconstrói os Fios entrega cabelos reconstruídos e resistentes à quebra desde o primeiro uso.",
     imgSrc: "./src/img/products/siage_reconstroi-fios_shamp_cond.jpg",
     imgAlt: "Combo Reconstrói os Fios",
@@ -53,6 +58,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.",
     imgSrc: "./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg",
     imgAlt: "Combo Reconstrói os Fios (4 itens)",
@@ -63,6 +69,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.",
     imgSrc: "./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg",
     imgAlt: "Combo Refil Nutri Rosé",
@@ -73,6 +80,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.",
     imgSrc: "./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg",
     imgAlt: "Máscara Capilar Cica Theray",
@@ -83,6 +91,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.",
     imgSrc: "./src/img/products/siage-acelera-o-crescimento_a.jpg",
     imgAlt: "Nova versão da Máscara Capilar Acelera o Crescimento",
@@ -93,6 +102,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.",
     imgSrc: "./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg",
     imgAlt: "Máscara Capilar - Cauterização dos Fios",
@@ -103,6 +113,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!",
     imgSrc: "./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg",
     imgAlt: "Máscara Capilar Nutri Óleos Poderosos",
@@ -113,6 +124,7 @@ export const tb_siageProducts = [
   },
   {
     id: id++,
+    brand: "Siàge",
     description: "",
     imgSrc: "./src/img/products/.jpg",
     imgAlt: "",
