@@ -75,14 +75,14 @@ html {
   gap: 60px;
 }
 
-.header_nav_list_item a {
+.header_nav_list_item > a {
   position: relative;
   font-size: 2rem;
   text-transform: uppercase;
   color: #FFF;
 }
 
-.header_nav_list_item a::after {
+.header_nav_list_item > a::after {
   position: absolute;
   bottom: 0;
   left: 1px;
@@ -93,7 +93,7 @@ html {
   transition: 0.4s;
 }
 
-.header_nav_list_item a:hover::after {
+.header_nav_list_item > a:hover::after {
   width: 99%;
 }
 
@@ -153,7 +153,7 @@ html {
 }
 
 .bag-modal {
-  display: none;
+  /*display: none;*/
   position: absolute;
   width: 280px;
   top: 35px;
@@ -163,6 +163,16 @@ html {
 
 .bag-modal_container {
   background-color: #FFF;
+  padding: 10px;
+}
+
+.bag-modal_container > a {
+  display: block;
+  background-color: var(--dark-purple);
+  color: #FFF;
+  padding-block: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .bag-modal_container::before {
@@ -178,8 +188,8 @@ html {
   display: flex;
 }
 
-.bag-modal_items img {
-  height: 50px;
+.bag-modal_items > img {
+  height: 70px;
 }
 
 /* MAIN */
