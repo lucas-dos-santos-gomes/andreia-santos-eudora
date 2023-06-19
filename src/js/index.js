@@ -15,3 +15,8 @@ copyYear.innerHTML = data.getFullYear();
 
 /* CREATE FIXED WHATS */
 createFixedWhats();
+
+/* BAG MODAL */
+import { BagModal } from "./bag-modal.js";
+
+BagModal();
