@@ -148,9 +148,8 @@ html {
   transition: .4s;
 }
 
-#img-bag:hover > .bag-modal {
+#img-bag:hover > .bag-modal, .bag-modal:hover {
   display: block;
-  opacity: 1;
 }
 
 .bag-modal {
@@ -160,8 +159,6 @@ html {
   top: 58px;
   left: -237px;
   background-color: #F00;
-  opacity: 0;
-  transition: .5s;
 }
 
 .bag-modal::before {
