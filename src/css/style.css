@@ -156,16 +156,20 @@ html {
   display: none;
   position: absolute;
   width: 280px;
-  top: 58px;
+  top: 35px;
   left: -237px;
-  background-color: #F00;
+  padding-top: 20px;
 }
 
-.bag-modal::before {
+.bag-modal_container {
+  background-color: #FFF;
+}
+
+.bag-modal_container::before {
   border: 10px solid transparent;
-  border-bottom-color: #F00;
+  border-bottom-color: #FFF;
   content: "";
-  top: -20px;
+  top: 0px;
   right: 10px;
   position: absolute;
 }
