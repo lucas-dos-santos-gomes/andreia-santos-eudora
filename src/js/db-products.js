@@ -1,7 +1,8 @@
 class Product {
-  constructor(id, brand, discount, value, installments) {
+  constructor(id, brand, productCode, discount, value, installments) {
     this.id = id;
     this.brand = brand;
+    this.productCode = productCode;
     this.discount = discount;
     this.value = value;
     this.installments = installments;
@@ -12,8 +13,8 @@ class Product {
     this.title = title;
   }
 
-  image(src, alt) {
-    this.imgSrc = src;
+  image(imgName, alt) {
+    this.imgSrc = `https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/${this.productCode}/${imgName}`;
     this.imgAlt = alt;
   }
 
@@ -32,9 +33,9 @@ let id = 1000;
 
 export const tb_divaProducts = [];
 
-tb_divaProducts[0] = new Product(id++, "Diva", 0, 108.90, 7);
+tb_divaProducts[0] = new Product(id++, "Diva", "E47214", 0, 108.90, 7);
 tb_divaProducts[0].texts("O Kit Diva Miniaturas Eudora reúne as fragrâncias mais incríveis da linha para você presentear quem ama.", "Kit Presente Miniaturas (2 itens)");
-tb_divaProducts[0].image("./src/img/products/estojo_diva_miniaturas.jpg", "Estojo Diva com dois produtos em Miniaturas");
+tb_divaProducts[0].image("ESTOJO_DIVA_MINIATURAS_E47214.jpg", "Estojo Diva com dois produtos em Miniaturas");
 
 id = 1100;
 
@@ -42,7 +43,7 @@ export const tb_siageProducts = [];
 
 tb_siageProducts[0] = new Product(id++, "Siàge", 127.98, 112.98, 7);
 tb_siageProducts[0].texts("O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.", "Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml");
-tb_siageProducts[0].image("./src/img/products/siage_nutri_rose_shamp_cond.jpg", "Combo Nutri Rose");
+tb_siageProducts[0].image("", "Combo Nutri Rose");
 
 tb_siageProducts[1] = new Product(id++, "Siàge", 0, 98.98, 6);
 tb_siageProducts[1].texts("O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.", "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml");
@@ -83,3 +84,7 @@ tb_siageProducts[9].image("./src/img/products/mascara-capilar-siage-cauterizacao
 tb_siageProducts[10] = new Product(id++, "Siàge", 0, 68.99, 4);
 tb_siageProducts[10].texts("Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!", "Máscara Capilar Nutri Óleos Poderosos 250g");
 tb_siageProducts[10].image("./src/img/products/siage_oleos_poderosos_mascara_capilar.jpg", "Máscara Capilar Nutri Óleos Poderosos");
+
+// https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/E47214/ESTOJO_DIVA_MINIATURAS_E47214.jpg
+
+// https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/E2022081302/E2022081302_SIAGE_nutri_rose_shamp_cond.jpg
