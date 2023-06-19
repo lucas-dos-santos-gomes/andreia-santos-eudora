@@ -148,8 +148,29 @@ html {
   transition: .4s;
 }
 
+#img-bag:hover > .bag-modal {
+  display: block;
+  opacity: 1;
+}
+
 .bag-modal {
-  position: fixed;
+  display: none;
+  position: absolute;
+  width: 280px;
+  top: 58px;
+  left: -237px;
+  background-color: #F00;
+  opacity: 0;
+  transition: .5s;
+}
+
+.bag-modal::before {
+  border: 10px solid transparent;
+  border-bottom-color: #F00;
+  content: "";
+  top: -20px;
+  right: 10px;
+  position: absolute;
 }
 
 /* MAIN */
