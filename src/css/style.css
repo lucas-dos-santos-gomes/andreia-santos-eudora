@@ -149,7 +149,7 @@ html {
 }
 
 .bag-modal {
-  position: absolute;
+  position: fixed;
 }
 
 /* MAIN */
