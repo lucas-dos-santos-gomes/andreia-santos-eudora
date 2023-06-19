@@ -126,6 +126,7 @@ html {
 }
 
 #img-bag {
+  position: relative;
   padding: 10px 13px;
   border-radius: 50%;
   cursor: pointer;
@@ -145,6 +146,10 @@ html {
 #bag {
   filter: brightness(10);
   transition: .4s;
+}
+
+.bag-modal {
+  position: absolute;
 }
 
 /* MAIN */
