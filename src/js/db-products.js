@@ -76,9 +76,9 @@ tb_siageProducts[8] = new Product(id++, "Siàge", "E92606", 67.99, 59.99, 4);
 tb_siageProducts[8].texts("Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.", "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)");
 tb_siageProducts[8].image("E92606_a", "Nova versão da Máscara Capilar Acelera o Crescimento");
 
-tb_siageProducts[9] = new Product(id++, "Siàge", 0, 67.99, 4);
+tb_siageProducts[9] = new Product(id++, "Siàge", "E93056", 0, 67.99, 4);
 tb_siageProducts[9].texts("A Máscara Capilar Siàge Cauterização dos Fios garante Cauterização Capilar profissional, reduz a porosidade dos fios e deixa os cabelos 3x mais macios.", "Máscara Capilar Cauterização dos Fios 250g");
-tb_siageProducts[9].image("./src/img/products/mascara-capilar-siage-cauterizacao-dos-fios-250g_fechada.jpg", "Máscara Capilar - Cauterização dos Fios");
+tb_siageProducts[9].image("Mascara-Capilar-Siage-Cauterizacao-dos-Fios-250g_93056_fechada", "Máscara Capilar - Cauterização dos Fios");
 
 tb_siageProducts[10] = new Product(id++, "Siàge", 0, 68.99, 4);
 tb_siageProducts[10].texts("Recupere a elasticidade dos fios já no 1° uso com a Máscara Capilar de Resgate Siàge Nutri Óleos Poderosos!", "Máscara Capilar Nutri Óleos Poderosos 250g");
