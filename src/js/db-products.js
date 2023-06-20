@@ -64,9 +64,9 @@ tb_siageProducts[5] = new Product(id++, "Siàge", "E2023040742", 0, 120.98, 8);
 tb_siageProducts[5].texts("O Combo Siàge Reconstrói os Fios entrega cabelos reconstruídos e resistentes à quebra desde o primeiro uso.", "Combo Reconstrói os Fios: Shampoo 400ml + Condicionador 400ml");
 tb_siageProducts[5].image("ED_E2023040742_SIAGE-NUTRI-ROSE_MASCARA_SHAMPOO_CONDICIONADOR_FRONTAL_", "Combo Reconstrói os Fios");
 
-tb_siageProducts[6] = new Product(id++, "Siàge", 217.96, 197.96, 10);
+tb_siageProducts[6] = new Product(id++, "Siàge", "E2023040619", 217.96, 197.96, 10);
 tb_siageProducts[6].texts("O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.", "Combo Reconstrói os Fios (4 itens)");
-tb_siageProducts[6].image("./src/img/products/siage_reconstroi_os_fios_refil_shampoo_condicionador_principal_1.jpg", "Combo de 4 itens da linha Reconstrói os Fios");
+tb_siageProducts[6].image("E2023040619_SIAGE_RECONSTROI_OS_FIOS_REFIL_SHAMPOO_CONDICIONADOR_PRINCIPAL_1", "Combo de 4 itens da linha Reconstrói os Fios");
 
 tb_siageProducts[7] = new Product(id++, "Siàge", 0, 67.99, 4);
 tb_siageProducts[7].texts("Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.", "Eudora Cica Therapy - Máscara Capilar 250g");
