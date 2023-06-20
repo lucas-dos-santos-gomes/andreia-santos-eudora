@@ -6,7 +6,6 @@ const listBagProducts = imgBag.querySelector(".bag-modal_list");
 const trashIcons = imgBag.querySelectorAll("i");
 const submitBag = imgBag.querySelector(".bag-modal_submit-button");
 const textNoProducts = imgBag.querySelector(".bag-modal_no-products");
-
 const buttonProducts = document.querySelectorAll(".button-put-bag");
 
 function bagHovers() {
@@ -16,6 +15,7 @@ function bagHovers() {
     if(header.classList.length < 2) {
       header.classList.add("active");
     }
+    hiddenBagList();
   }
   imgBag.onmouseout = () => {
     document.querySelector(".main").style.filter = "brightness(1)";
@@ -23,6 +23,7 @@ function bagHovers() {
     if(header.classList.length > 1 && window.scrollY < 2) {
       header.classList.remove("active");
     }
+    hiddenBagList();
   }
 
   trashIcons.forEach(trashIcon => {
@@ -34,6 +35,8 @@ function bagHovers() {
     }
   });
 }
+
+let totalPrice = 0;
 
 function addBag() {
   const id = this.parentElement.classList[0];
@@ -51,16 +54,13 @@ function addBag() {
           </div>
         </li>
       `);
+      totalPrice += filterProduct.value;
+      submitBag.innerText = `Finalizar compra (R$ ${totalPrice})`;
     }
   });
 }
 
-export function BagModal() {
-  bagHovers();
-  buttonProducts.forEach(button => {
-    button.onclick = addBag;
-  });
-
+function hiddenBagList() {
   if(listBagProducts.childElementCount == 0) {
     listBagProducts.classList.add("display");
     listBagProducts.classList.add("none");
@@ -80,4 +80,13 @@ export function BagModal() {
     textNoProducts.classList.add("display");
     textNoProducts.classList.add("none");
   }
+}
+
+export function BagModal() {
+  bagHovers();
+  buttonProducts.forEach(button => {
+    button.onclick = addBag;
+  });
+
+  hiddenBagList();
 }
