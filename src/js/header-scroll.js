@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+export const header = document.querySelector(".header");
 const linkFocused = document.querySelector("#focused");
 
 window.addEventListener('scroll', () => {
