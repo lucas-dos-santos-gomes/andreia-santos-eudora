@@ -1,9 +1,8 @@
-import { tb_divaProducts, tb_siageProducts } from "./db-products.js";
+import { allTables } from "./db-products.js";
 
-const allTables = tb_divaProducts.concat(tb_siageProducts);
 const productsList = document.querySelector(".products-list");
 allTables.forEach((object, index) => {
-  if(index == 0) {
+  if(index <= 1) {
     productsList.innerHTML += (`
       <li class="${object.id} products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
         <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />

@@ -1,9 +1,10 @@
 import { header } from "./header-scroll.js";
+import { allTables } from "./db-products.js";
 
 const imgBag = document.querySelector("#img-bag");
 const trashIcon = imgBag.querySelector("i");
 
-const buttonProducts = document.querySelector(".button-put-bag");
+const buttonProducts = document.querySelectorAll(".button-put-bag");
 
 function bagHovers() {
   imgBag.onmouseover = () => {
@@ -30,10 +31,14 @@ function bagHovers() {
 }
 
 function addBag() {
-  console.log(this.offsetParent.children[1].children[0].classList[0]);
+  const id = this.parentElement.classList[0];
+  const filterProduct = allTables.filter(e => e.id == id);
+  console.log(id);
 }
 
 export function BagModal() {
   bagHovers();
-  buttonProducts.onclick = addBag;
+  buttonProducts.forEach(button => {
+    button.onclick = addBag;
+  });
 }
