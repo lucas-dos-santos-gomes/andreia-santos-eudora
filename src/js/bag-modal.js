@@ -3,7 +3,6 @@ import { allTables } from "./db-products.js";
 
 const imgBag = document.querySelector("#img-bag");
 const listBagProducts = imgBag.querySelector(".bag-modal_list");
-const trashIcons = imgBag.querySelectorAll("i");
 const submitBag = imgBag.querySelector(".bag-modal_submit-button");
 const textNoProducts = imgBag.querySelector(".bag-modal_no-products");
 const buttonProducts = document.querySelectorAll(".button-put-bag");
@@ -26,6 +25,11 @@ function bagHovers() {
     hiddenBagList();
   }
 
+  trashAnimation();
+}
+
+function trashAnimation() {
+  const trashIcons = imgBag.querySelectorAll("i");
   trashIcons.forEach(trashIcon => {
     trashIcon.onmouseover = () => {
       trashIcon.classList.toggle("fa-bounce");
@@ -58,6 +62,7 @@ function addBag() {
       submitBag.innerText = `Finalizar compra (R$ ${totalPrice})`;
     }
   });
+  trashAnimation();
 }
 
 function hiddenBagList() {
