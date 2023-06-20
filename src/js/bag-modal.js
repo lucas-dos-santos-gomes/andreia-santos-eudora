@@ -25,10 +25,10 @@ function bagHovers() {
     hiddenBagList();
   }
 
-  trashAnimation();
+  trashEvents();
 }
 
-function trashAnimation() {
+function trashEvents() {
   const trashIcons = imgBag.querySelectorAll("i");
   trashIcons.forEach(trashIcon => {
     trashIcon.onmouseover = () => {
@@ -37,6 +37,7 @@ function trashAnimation() {
     trashIcon.onmouseout = () => {
       trashIcon.classList.toggle("fa-bounce");
     }
+    trashIcon.onclick = removeProduct;
   });
 }
 
@@ -71,7 +72,7 @@ function addBag() {
       submitBag.innerText = `Finalizar compra (R$ ${totalPrice.toFixed(2)})`;
     }
   });
-  trashAnimation();
+  trashEvents();
 }
 
 function hiddenBagList() {
@@ -94,6 +95,14 @@ function hiddenBagList() {
     textNoProducts.classList.add("display");
     textNoProducts.classList.add("none");
   }
+}
+
+function removeProduct() {
+  listBagProducts.removeChild(this.parentElement.parentElement.parentElement);
+  const productValue = +((this.parentElement.children[0].textContent.slice(3, this.parentElement.children[0].textContent.length)).replace(",", "."));
+  const quantityProducts = +(this.parentElement.previousElementSibling.children[0].innerText)
+  totalPrice -= (productValue * quantityProducts);
+  submitBag.innerText = `Finalizar compra (R$ ${totalPrice.toFixed(2)})`;
 }
 
 export function BagModal() {
