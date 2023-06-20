@@ -7,7 +7,7 @@ allTables.forEach((object, index) => {
       <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
       <h3 class="product-title">${object.title}</h3>
       ${(object.discount > 0)? `<p class="product-value-discount">R$ 127,98</p>` : ""}
-      <p class="product-value">${object.value}</p>
+      <p class="product-value">R$ ${object.convertToString(object.value)}</p>
       <p class="product-value-installment">${object.installmentCost()}</p>
       <button type="button" class="button-put-bag">+ Adicionar na sacola</button>
     </li>

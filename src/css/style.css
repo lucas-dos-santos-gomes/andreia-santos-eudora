@@ -322,6 +322,10 @@ strong {
 }
 
 /* PRODUCTS */
+.products {
+  background-color: #FFF;
+}
+
 .products-container {
   display: flex;
   flex-direction: column;
