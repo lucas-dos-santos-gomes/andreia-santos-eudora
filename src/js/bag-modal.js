@@ -68,7 +68,7 @@ function addBag() {
         `);
       }
       totalPrice += filterProduct.value;
-      submitBag.innerText = `Finalizar compra (R$ ${totalPrice})`;
+      submitBag.innerText = `Finalizar compra (R$ ${totalPrice.toFixed(2)})`;
     }
   });
   trashAnimation();
