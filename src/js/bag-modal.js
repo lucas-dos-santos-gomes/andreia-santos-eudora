@@ -1,8 +1,7 @@
 import { header } from "./header-scroll.js";
 
 const imgBag = document.querySelector("#img-bag");
-const trashContainer = document.querySelector(".trash-container");
-const trashIcon = trashContainer.querySelector("i");
+const trashIcon = imgBag.querySelector("i");
 
 const buttonProducts = document.querySelector(".button-put-bag");
 
@@ -22,21 +21,19 @@ function bagHovers() {
     }
   }
 
-  trashContainer.onmouseover = () => {
+  trashIcon.onmouseover = () => {
     trashIcon.classList.toggle("fa-bounce");
   }
-  trashContainer.onmouseout = () => {
+  trashIcon.onmouseout = () => {
     trashIcon.classList.toggle("fa-bounce");
   }
 }
 
 function addBag() {
-  console.log(this.offsetParent.children[1].children[0].id);
+  console.log(this.offsetParent.children[1].children[0].classList[0]);
 }
 
 export function BagModal() {
   bagHovers();
-  console.log(buttonProducts.offsetParent.children[1].children[0].id);
-
   buttonProducts.onclick = addBag;
 }

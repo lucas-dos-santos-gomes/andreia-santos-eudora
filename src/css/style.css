@@ -229,21 +229,19 @@ html {
 .bag-modal_items-info > .bag-modal_price-and-trash > .bag-modal_price {
   font-size: 15px;
   font-weight: bold;
+  padding-top: 10px;
   color: var(--light-purple);
 }
 
-.bag-modal_items-info > .bag-modal_price-and-trash > .trash-container {
-  display: grid;
-  place-items: center;
+.bag-modal_items-info > .bag-modal_price-and-trash > i {
   font-size: 18px;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  padding: 10px;
   margin-right: 2px;
   transition: .2s;
 }
 
-.bag-modal_items-info > .bag-modal_price-and-trash > .trash-container:hover > i {
+.bag-modal_items-info > .bag-modal_price-and-trash > i:hover {
   color: #F00;
 }
 

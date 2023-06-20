@@ -5,7 +5,7 @@ const productsList = document.querySelector(".products-list");
 allTables.forEach((object, index) => {
   if(index == 0) {
     productsList.innerHTML += (`
-      <li id="${object.id}" class="products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
+      <li class="${object.id} products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
         <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
         <h3 class="product-title">${object.title}</h3>
         ${(object.discount > 0)? `<p class="product-value-discount">R$ 127,98</p>` : ""}
