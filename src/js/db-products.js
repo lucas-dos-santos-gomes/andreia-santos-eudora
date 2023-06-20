@@ -14,6 +14,7 @@ class Product {
   }
 
   image(imgName, alt) {
+    this.imgName = imgName;
     this.imgSrc = `https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/${this.productCode}/${imgName}`;
     this.imgAlt = alt;
   }
