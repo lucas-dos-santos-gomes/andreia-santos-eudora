@@ -68,9 +68,9 @@ tb_siageProducts[6] = new Product(id++, "Siàge", "E2023040619", 217.96, 197.96,
 tb_siageProducts[6].texts("O Combo Siàge Reconstrói os Fios entrega em quatro itens limpeza e condicionamento intenso para seus fios.", "Combo Reconstrói os Fios (4 itens)");
 tb_siageProducts[6].image("E2023040619_SIAGE_RECONSTROI_OS_FIOS_REFIL_SHAMPOO_CONDICIONADOR_PRINCIPAL_1", "Combo de 4 itens da linha Reconstrói os Fios");
 
-tb_siageProducts[7] = new Product(id++, "Siàge", 0, 67.99, 4);
+tb_siageProducts[7] = new Product(id++, "Siàge", "E47364", 0, 67.99, 4);
 tb_siageProducts[7].texts("Máscara para cabelos danificados. Recupera os danos e repõe nutrientes essenciais garantindo cabelos fortes.", "Eudora Cica Therapy - Máscara Capilar 250g");
-tb_siageProducts[7].image("./src/img/products/siage-mascara-capilar-cica-therapy-250g.jpg", "Máscara Capilar Cica Theray");
+tb_siageProducts[7].image("SIAGE-MASCARA-CAPILAR-CICA-THERAPY-250G-E47364_", "Máscara Capilar Cica Theray");
 
 tb_siageProducts[8] = new Product(id++, "Siàge", 67.99, 59.99, 4);
 tb_siageProducts[8].texts("Máscara Siàge Acelera o Crescimento tem ação antiquebra imediata, fios 6x mais resistentes e ultra hidratados.", "Máscara Capilar Acelera o Crescimento 250g (Nova Versão)");
