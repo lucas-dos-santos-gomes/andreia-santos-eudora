@@ -4,6 +4,8 @@ import { allTables } from "./db-products.js";
 const imgBag = document.querySelector("#img-bag");
 const listBagProducts = imgBag.querySelector(".bag-modal_list");
 const trashIcons = imgBag.querySelectorAll("i");
+const submitBag = imgBag.querySelector(".bag-modal_submit-button");
+const textNoProducts = imgBag.querySelector(".bag-modal_no-products");
 
 const buttonProducts = document.querySelectorAll(".button-put-bag");
 
@@ -35,8 +37,6 @@ function bagHovers() {
 
 function addBag() {
   const id = this.parentElement.classList[0];
-  // const filterProduct = allTables.filter(e => e.id == id);
-  // console.log(filterProduct.convertToString);
   allTables.forEach(filterProduct => {
     if (filterProduct.id == id) {
       listBagProducts.innerHTML += (`
@@ -60,4 +60,24 @@ export function BagModal() {
   buttonProducts.forEach(button => {
     button.onclick = addBag;
   });
+
+  if(listBagProducts.childElementCount == 0) {
+    listBagProducts.classList.add("display");
+    listBagProducts.classList.add("none");
+    
+    submitBag.classList.add("display");
+    submitBag.classList.add("none");
+    
+    textNoProducts.classList.remove("display");
+    textNoProducts.classList.remove("none");
+  } else {
+    listBagProducts.classList.remove("display");
+    listBagProducts.classList.remove("none");
+    
+    submitBag.classList.remove("display");
+    submitBag.classList.remove("none");
+
+    textNoProducts.classList.add("display");
+    textNoProducts.classList.add("none");
+  }
 }

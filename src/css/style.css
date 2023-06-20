@@ -40,6 +40,10 @@ html {
   border: 3px solid #070d12;
 }
 
+.display.none {
+  display: none;
+}
+
 .container {
   width: 90%;
   padding: 0 0 85px;
@@ -243,6 +247,11 @@ html {
 
 .bag-modal_items-info > .bag-modal_price-and-trash > i:hover {
   color: #F00;
+}
+
+.bag-modal_no-products {
+  font-size: 16px;
+  text-align: center;
 }
 
 /* MAIN */
