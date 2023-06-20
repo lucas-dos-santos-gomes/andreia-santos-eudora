@@ -2,18 +2,16 @@ import { allTables } from "./db-products.js";
 
 const productsList = document.querySelector(".products-list");
 allTables.forEach((object, index) => {
-  if(index <= 2) {
-    productsList.innerHTML += (`
-      <li class="${object.id} products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
-        <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
-        <h3 class="product-title">${object.title}</h3>
-        ${(object.discount > 0)? `<p class="product-value-discount">R$ 127,98</p>` : ""}
-        <p class="product-value">${object.value}</p>
-        <p class="product-value-installment">${object.installmentCost()}</p>
-        <button type="button" class="button-put-bag">+ Adicionar na sacola</button>
-      </li>
-    `);
-  }
+  productsList.innerHTML += (`
+    <li class="${object.id} products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
+      <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
+      <h3 class="product-title">${object.title}</h3>
+      ${(object.discount > 0)? `<p class="product-value-discount">R$ 127,98</p>` : ""}
+      <p class="product-value">${object.value}</p>
+      <p class="product-value-installment">${object.installmentCost()}</p>
+      <button type="button" class="button-put-bag">+ Adicionar na sacola</button>
+    </li>
+  `);
 });
 
 /* TESTE ACIMA */
