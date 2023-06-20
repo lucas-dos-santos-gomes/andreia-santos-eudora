@@ -1,6 +1,7 @@
 import { header } from "./header-scroll.js";
-import { allTables } from "./db-products.js";
+import { allTables, Product } from "./db-products.js";
 
+const convert = new Product();
 const imgBag = document.querySelector("#img-bag");
 const listBagProducts = imgBag.querySelector(".bag-modal_list");
 const submitBag = imgBag.querySelector(".bag-modal_submit-button");
@@ -69,10 +70,11 @@ function addBag() {
         `);
       }
       totalPrice += filterProduct.value;
-      submitBag.innerText = `Finalizar compra (R$ ${totalPrice.toFixed(2)})`;
+      submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
     }
   });
   trashEvents();
+  sendMessage();
 }
 
 function hiddenBagList() {
@@ -102,7 +104,17 @@ function removeProduct() {
   const productValue = +((this.parentElement.children[0].textContent.slice(3, this.parentElement.children[0].textContent.length)).replace(",", "."));
   const quantityProducts = +(this.parentElement.previousElementSibling.children[0].innerText)
   totalPrice -= (productValue * quantityProducts);
-  submitBag.innerText = `Finalizar compra (R$ ${totalPrice.toFixed(2)})`;
+  submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
+}
+
+function sendMessage() {
+  let msg = "Olá Andreia!\nDesejo comprar o(s) produto(s) listados abaixo:\n\n";
+  for(let textProduct of listBagProducts.querySelectorAll(".bag-modal_title-product")) {
+    msg += `- ${textProduct.textContent} = ${textProduct.nextElementSibling.children[0].textContent}\n`;
+  }
+  submitBag.href = "https://api.whatsapp.com/send?phone=5511985681416&text=";
+  submitBag.href += encodeURIComponent(msg + "\n");
+  submitBag.href += `Valor total: R$ ${convert.convertToString(totalPrice.toFixed(2))}`;
 }
 
 export function BagModal() {
@@ -112,4 +124,5 @@ export function BagModal() {
   });
 
   hiddenBagList();
+  sendMessage();
 }
