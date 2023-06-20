@@ -254,6 +254,29 @@ html {
   text-align: center;
 }
 
+.bag-modal_number-items {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: none;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  background-color: #FFF;
+  border-radius: 50px;
+  padding-top: 1.5px;
+  width: 20px;
+  height: 20px;
+  transition: .2s;
+}
+
+#img-bag:hover > .bag-modal_number-items {
+  color: #FFF;
+  background-color: #000;
+}
+
 /* MAIN */
 .main {
   transition: filter .2s;

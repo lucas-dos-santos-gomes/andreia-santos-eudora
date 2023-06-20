@@ -6,6 +6,7 @@ const imgBag = document.querySelector("#img-bag");
 const listBagProducts = imgBag.querySelector(".bag-modal_list");
 const submitBag = imgBag.querySelector(".bag-modal_submit-button");
 const textNoProducts = imgBag.querySelector(".bag-modal_no-products");
+const numberItems = imgBag.querySelector(".bag-modal_number-items");
 const buttonProducts = document.querySelectorAll(".button-put-bag");
 
 function bagHovers() {
@@ -75,6 +76,7 @@ function addBag() {
   });
   trashEvents();
   sendMessage();
+  updateNumberItems();
 }
 
 function hiddenBagList() {
@@ -105,6 +107,7 @@ function removeProduct() {
   const quantityProducts = +(this.parentElement.previousElementSibling.children[0].innerText)
   totalPrice -= (productValue * quantityProducts);
   submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
+  updateNumberItems();
 }
 
 function sendMessage() {
@@ -117,6 +120,20 @@ function sendMessage() {
   submitBag.href += `Valor total: R$ ${convert.convertToString(totalPrice.toFixed(2))}`;
 }
 
+function updateNumberItems() {
+  numberItems.innerHTML = 0;
+  for(const listItems of listBagProducts.children) {
+    numberItems.innerHTML = +(numberItems.innerHTML) + +(listItems.querySelector(".bag-modal_quantity-items").textContent);
+  }
+  if(numberItems.innerHTML > 0) {
+    numberItems.style.display = "flex";
+  } else {
+    numberItems.style.display = "none";
+    document.querySelector(".main").style.filter = "brightness(1)";
+    document.querySelector(".footer").style.filter = "brightness(1)";
+  }
+}
+
 export function BagModal() {
   bagHovers();
   buttonProducts.forEach(button => {
@@ -125,4 +142,5 @@ export function BagModal() {
 
   hiddenBagList();
   sendMessage();
+  updateNumberItems();
 }
