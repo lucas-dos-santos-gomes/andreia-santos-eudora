@@ -44,9 +44,9 @@ tb_siageProducts[0] = new Product(id++, "Siàge", "E2022081302", 127.98, 112.98,
 tb_siageProducts[0].texts("O combo contém produtos que entregam fios saudáveis e livres de pontas duplas por meio de ativos poderosos.", "Combo Nutri Rose: Shampoo 400ml + Condicionador 400ml");
 tb_siageProducts[0].image("E2022081302_SIAGE_nutri_rose_shamp_cond", "Combo Nutri Rose");
 
-tb_siageProducts[1] = new Product(id++, "Siàge", 0, 98.98, 6);
+tb_siageProducts[1] = new Product(id++, "Siàge", "E2023040741", 0, 98.98, 6);
 tb_siageProducts[1].texts("O Combo Refil Siàge Nutri Rosé é ideal para quem não abre mão de fios saudáveis, hidratados e nutridos.", "Combo Refil Nutri Rosé: Shampoo 400ml + Condicionador 400ml");
-tb_siageProducts[1].image("./src/img/products/siage-nutri-rose_refil_shampoo_condicionador_frontal_1.jpg", "Combo Refil Nutri Rosé");
+tb_siageProducts[1].image("ED_E2023040741_SIAGE-NUTRI-ROSE_REFIL_SHAMPOO_CONDICIONADOR_FRONTAL_1", "Combo Refil Nutri Rosé");
 
 tb_siageProducts[2] = new Product(id++, "Siàge", 0, 67.99, 4);
 tb_siageProducts[2].texts("Para uma plástica capilar instantânea e fios extremamente macios, conheça a Máscara Capilar Hair-Plastia.", "Máscara Capilar Hair-Plastia 250G");

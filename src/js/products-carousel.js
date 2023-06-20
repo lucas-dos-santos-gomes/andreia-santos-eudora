@@ -2,7 +2,7 @@ import { allTables } from "./db-products.js";
 
 const productsList = document.querySelector(".products-list");
 allTables.forEach((object, index) => {
-  if(index <= 1) {
+  if(index <= 2) {
     productsList.innerHTML += (`
       <li class="${object.id} products-list_items ${(index === 0)? "products-carousel_first-item" : ""}" title="${object.description}">
         <img class="product-image" src="${object.imgSrc}" alt="${object.imgAlt}" draggable="false" />
