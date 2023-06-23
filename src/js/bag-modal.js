@@ -1,4 +1,4 @@
-import { header } from "./header-scroll.js";
+import { header } from "./header.js";
 import { allTables, Product } from "./db-products.js";
 
 const convert = new Product();
