@@ -17,15 +17,39 @@
 </head>
 <body>
   <header class="header">
-    <div class="header_img-logo">
+    <div class="hamburguer-menu">
+      <input type="checkbox" id="menu-check" />
+      <label for="menu-check">
+        <span class="menu-streak"></span>
+        <span class="menu-streak"></span>
+        <span class="menu-streak"></span>
+      </label>
+      <nav class="header_hbg-nav">
+        <ul class="header_hbg-nav_list">
+          <li class="header_hbg-nav_list_item">
+            <a href="#top-of-page" class="focused">Home</a>
+          </li>
+          <li class="header_hbg-nav_list_item">
+            <a href="#link-products">Produtos</a>
+          </li>
+          <li class="header_hbg-nav_list_item">
+            <a href="#about-me">Sobre</a>
+          </li>
+          <li class="header_hbg-nav_list_item">
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <picture class="header_img-logo">
       <a href="./index.html">
         <img src="./src/img/logo/logo-eudora1.svg" alt="Título do logo da marca Eudora usando fonte com serifa bruta" />
       </a>
-    </div>
+    </picture>
     <nav class="header_nav">
       <ul class="header_nav_list">
         <li class="header_nav_list_item">
-          <a href="#top-of-page" id="focused">Home</a>
+          <a href="#top-of-page" class="focused">Home</a>
         </li>
         <li class="header_nav_list_item">
           <a href="#link-products">Produtos</a>
