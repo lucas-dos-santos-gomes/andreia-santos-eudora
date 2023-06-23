@@ -17,30 +17,11 @@
 </head>
 <body>
   <header class="header">
-    <div class="hamburguer-menu">
-      <input type="checkbox" id="menu-check" class="display none" />
-      <label for="menu-check" class="display none">
-        <span class="menu-streak"></span>
-        <span class="menu-streak"></span>
-        <span class="menu-streak"></span>
-      </label>
-      <nav class="header_hbg-nav">
-        <ul class="header_hbg-nav_list">
-          <li class="header_hbg-nav_list_item">
-            <a href="#top-of-page" class="focused">Home</a>
-          </li>
-          <li class="header_hbg-nav_list_item">
-            <a href="#link-products">Produtos</a>
-          </li>
-          <li class="header_hbg-nav_list_item">
-            <a href="#about-me">Sobre</a>
-          </li>
-          <li class="header_hbg-nav_list_item">
-            <a href="#contact">Contato</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <label for="menu-check" class="hamburguer-menu_label">
+      <span class="menu-streak"></span>
+      <span class="menu-streak"></span>
+      <span class="menu-streak"></span>
+    </label>
     <picture class="header_img-logo">
       <a href="./index.html">
         <img src="./src/img/logo/logo-eudora1.svg" alt="Título do logo da marca Eudora usando fonte com serifa bruta" />
@@ -75,6 +56,25 @@
       </ul>
     </nav>
   </header>
+  <div class="hamburguer-menu">
+    <input type="checkbox" id="menu-check" class="display none" />
+    <nav class="hamburguer-nav">
+      <ul class="hamburguer-nav_list">
+        <li class="hamburguer-nav_list_item">
+          <a href="#top-of-page" class="focused active">Home</a>
+        </li>
+        <li class="hamburguer-nav_list_item">
+          <a href="#link-products">Produtos</a>
+        </li>
+        <li class="hamburguer-nav_list_item">
+          <a href="#about-me">Sobre</a>
+        </li>
+        <li class="hamburguer-nav_list_item">
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <main class="main">
     <a name="top-of-page"></a>
     <section class="main_top">

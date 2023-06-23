@@ -69,7 +69,7 @@ html {
   position: fixed;
 }
 
-.hamburguer-menu {
+.hamburguer-menu_label {
   display: none;
 }
 
@@ -111,8 +111,32 @@ html {
 }
 
 @media screen and (max-width: 959px) {
-  .hamburguer-menu {
+  .hamburguer-menu_label {
     display: initial;
+  }
+
+  .hamburguer-nav {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #3e0480;
+  }
+
+  .hamburguer-nav_list {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    font-size: 30px;
+  }
+
+  .hamburguer-nav_list_item > a:not(.focused) {
+    color: #FFF;
   }
   
   .header_img-logo img:first-child {
@@ -128,7 +152,7 @@ html {
   }
 }
 
-#focused {
+#focused, .focused {
   color: #C3A051;
   transition: .3s;
 }
