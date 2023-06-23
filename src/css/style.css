@@ -69,12 +69,17 @@ html {
   position: fixed;
 }
 
+.hamburguer-menu {
+  display: none;
+}
+
 .header_img-logo {
   cursor: pointer;
 }
 
 .header_img-logo img:last-child {
   display: none;
+  width: 50px;
 }
 
 .header_nav_list {
@@ -103,6 +108,24 @@ html {
 
 .header_nav_list_item > a:hover::after {
   width: 99%;
+}
+
+@media screen and (max-width: 959px) {
+  .hamburguer-menu {
+    display: initial;
+  }
+  
+  .header_img-logo img:first-child {
+    display: none;
+  }
+  
+  .header_img-logo img:last-child {
+    display: block;
+  }
+
+  .header_nav_list_item:not(#img-bag) {
+    display: none;
+  }
 }
 
 #focused {
