@@ -115,6 +115,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    cursor: pointer;
   }
 
   .menu-streak {
@@ -144,6 +145,10 @@ html {
     font-size: 30px;
   }
 
+  .hamburguer-nav_list_item > a {
+    position: relative;
+  }
+
   .hamburguer-nav_list_item > a:not(.focused) {
     color: #FFF;
   }
@@ -159,9 +164,21 @@ html {
   .header_nav_list_item:not(#img-bag) {
     display: none;
   }
+
+  .focused::after {
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: #FFC84A;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
 }
 
-#focused, .focused {
+#focused {
   color: #C3A051;
   transition: .3s;
 }
@@ -170,7 +187,7 @@ html {
   color: #FFC84A;
 }
 
-#focused.active {
+#focused.active, .focused {
   color: #FFC84A;
 }
 
@@ -185,7 +202,7 @@ html {
   transition: 0.4s;
 }
 
-#focused:hover::after {
+#focused:hover::after, .focused:hover::after {
   width: 99%;
 }
 
