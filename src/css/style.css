@@ -139,6 +139,8 @@ html {
     left: 0;
     z-index: 9;
     background-color: #3e0480;
+    transform: translateY(-100vh);
+    transition: transform .5s;
   }
 
   .hamburguer-nav_list {
