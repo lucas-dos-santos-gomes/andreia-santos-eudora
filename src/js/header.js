@@ -8,11 +8,21 @@ window.addEventListener('scroll', () => {
 
 const MENU_HAMBURGUER_CHECK = document.querySelector("#x-menu");
 const HAMBURGUER_NAV = document.querySelector(".hamburguer-nav");
+const HAMBURGUER_LIST_ITEM = HAMBURGUER_NAV.querySelectorAll(".hamburguer-nav_list_item a");
 
-MENU_HAMBURGUER_CHECK.onclick = (e) => {
-  if(e.srcElement.checked) {
+function checkMenu() {
+  if(MENU_HAMBURGUER_CHECK.checked) {
     HAMBURGUER_NAV.style.transform = "translateY(0)";
   } else {
     HAMBURGUER_NAV.style.transform = "translateY(-100vh)";
   }
 }
+
+MENU_HAMBURGUER_CHECK.onclick = checkMenu;
+
+HAMBURGUER_LIST_ITEM.forEach(links => {
+  links.onclick = () => {
+    MENU_HAMBURGUER_CHECK.checked = false;
+    checkMenu();
+  }
+});
