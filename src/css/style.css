@@ -114,8 +114,11 @@ html {
   .hamburguer-menu_label {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: space-between;
     cursor: pointer;
+    height: 100%;
+    box-sizing: border-box;
+    padding-block: 5px;
   }
 
   .menu-streak {
@@ -123,6 +126,7 @@ html {
     height: 5px;
     border-radius: 50px;
     background-color: #FFF;
+    transition: .3s;
   }
 
   .hamburguer-nav {
@@ -152,6 +156,29 @@ html {
   .hamburguer-nav_list_item > a:not(.focused) {
     color: #FFF;
   }
+
+  .hamburguer-nav_list_item > a::after {
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    content: " ";
+    width: 0;
+    height: 3px;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  #x-menu:checked + .hamburguer-menu_label > .menu-streak:first-child {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  #x-menu:checked + .hamburguer-menu_label > .menu-streak:nth-child(2) {
+    display: none;
+  }
+
+  #x-menu:checked + .hamburguer-menu_label > .menu-streak:last-child {
+    transform: translateY(-15px) rotate(135deg);
+  }
   
   .header_img-logo img:first-child {
     display: none;
@@ -166,15 +193,7 @@ html {
   }
 
   .focused::after {
-    position: absolute;
-    bottom: 0;
-    left: 1px;
-    content: " ";
-    width: 0;
-    height: 3px;
     background-color: #FFC84A;
-    transition: 0.4s;
-    border-radius: 50px;
   }
 }
 
@@ -183,11 +202,7 @@ html {
   transition: .3s;
 }
 
-#focused:hover {
-  color: #FFC84A;
-}
-
-#focused.active, .focused {
+#focused:hover, #focused.active, .focused {
   color: #FFC84A;
 }
 
@@ -202,7 +217,7 @@ html {
   transition: 0.4s;
 }
 
-#focused:hover::after, .focused:hover::after {
+#focused:hover::after, .hamburguer-nav_list_item a:hover::after {
   width: 99%;
 }
 
@@ -214,7 +229,7 @@ html {
   transition: 400ms background-color;
 }
 
-#img-bag:hover {
+#img-bag:hover, .hamburguer-nav_list_item > a:not(.focused)::after {
   background-color: #FFF;
 }
 
