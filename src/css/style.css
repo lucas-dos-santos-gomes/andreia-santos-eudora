@@ -73,6 +73,10 @@ html {
   cursor: pointer;
 }
 
+.header_img-logo img:last-child {
+  display: none;
+}
+
 .header_nav_list {
   display: flex;
   align-items: center;
