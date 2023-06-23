@@ -108,6 +108,7 @@ function removeProduct() {
   totalPrice -= (productValue * quantityProducts);
   submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
   updateNumberItems();
+  sendMessage();
 }
 
 function sendMessage() {
