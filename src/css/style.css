@@ -112,7 +112,16 @@ html {
 
 @media screen and (max-width: 959px) {
   .hamburguer-menu_label {
-    display: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu-streak {
+    width: 40px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #FFF;
   }
 
   .hamburguer-nav {
