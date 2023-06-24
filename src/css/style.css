@@ -24,6 +24,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  min-width: 280px;
 }
 
 ::-webkit-scrollbar{
@@ -1287,6 +1288,28 @@ strong {
     width: 30rem;
   }
 
+  .products > .container {
+    width: 100%;
+  }
+
+  .products-content.products-wrapper {
+    width: 200px;
+  }
+
+  .products-list_items {
+    width: 180px;
+    height: 400px;
+  }
+
+  .products-list_items .product-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .products-list_items .product-title, .products-list_items .product-value {
+    font-size: 14px;
+  }
+
   .contact-info_list-items {
     gap: 8px;
     font-size: 16px;
@@ -1298,5 +1321,11 @@ strong {
 
   .login-box {
     padding-inline: 20px;
+  }
+
+  @media screen and (max-width: 330px) {
+    .wrapper.footer-content-itens {
+      flex-direction: column;
+    }
   }
 }
