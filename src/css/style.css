@@ -856,6 +856,29 @@ strong {
 
 @media screen and (max-width: 659px) {
   .footer-content {
+    row-gap: 40px;
+  }
+  
+  .footer_image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer_image a {
+    margin: auto;
+  }
+  
+  .footer-content-itens {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .footer-content {
     flex-direction: column;
+  }
+  
+  .footer-content > nav > ul {
+    width: 132px;
   }
 }
