@@ -1189,6 +1189,7 @@ strong {
 .footer .copyright {
   font-size: 13px;
   text-align: center;
+  line-height: 20px;
 }
 
 .footer .copyright a {
