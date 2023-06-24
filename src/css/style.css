@@ -642,6 +642,30 @@ strong {
   transform: scale(0.98);
 }
 
+@media screen and (max-width: 460px) {
+  .products-container.sections-container {
+    min-height: 100vh;
+    gap: 50px;
+  }
+
+  .products-content.products-wrapper {
+    width: 270px;
+    padding: 20px 20px;
+    margin-inline: auto;
+    /* box-shadow: inset 0px 0px 20px -5px; */
+    box-shadow: 0px 0px 15px -3px;
+  }
+
+  .products-list {
+    scroll-snap-type: x mandatory;
+    margin-bottom: 0;
+  }
+
+  .products-list_items {
+    scroll-snap-align: center;
+  }
+}
+
 /* BACKGROUND EUDORA FIXED */
 .bg-eudora-fixed {
   background-image: url(../img/logo/logomarca-eudora.png);
