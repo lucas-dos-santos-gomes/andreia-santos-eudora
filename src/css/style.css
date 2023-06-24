@@ -1190,6 +1190,10 @@ strong {
   font-size: 13px;
   text-align: center;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
 }
 
 .footer .copyright a {
