@@ -33,7 +33,11 @@ productsCarouselAll.forEach(productsCarousel => {
     icon.addEventListener("click", () => {
       let firstProductWidth = firstProduct.clientWidth + 14; // getting first list item width & adding 14 margin value
       // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-      productsCarousel.scrollLeft += icon.id == "arrow-left" ? -(firstProductWidth * 2) : (firstProductWidth * 2);
+      if(window.innerWidth <= 600) {
+        productsCarousel.scrollLeft += icon.id == "arrow-left" ? -(firstProductWidth) : (firstProductWidth);
+      } else {
+        productsCarousel.scrollLeft += icon.id == "arrow-left" ? -(firstProductWidth * 2) : (firstProductWidth * 2);
+      }
       setInterval(showHideIcons, 60); // calling function after 60ms;
     });
   });
