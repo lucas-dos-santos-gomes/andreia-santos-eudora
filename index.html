@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/css/style.css" media="all">
   <link rel="stylesheet" href="./src/css/footer-icons.css" media="all">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" media="all">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Andreia Santos Eudora</title>
 </head>
 <body>
@@ -117,10 +118,10 @@
       <a name="about-me"></a>
       <div class="container">
         <section class="about-me_container sections-container">
-          <div class="about-me_image-container">
+          <div class="about-me_image-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
             <img class="about-me_image" src="./src/img/perfil-andreia.png" alt="Foto de perfil da Andreia com fundo lilás arredondado">
           </div>
-          <div class="about-me_text-container">
+          <div class="about-me_text-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="300">
             <h3 class="about-me_title">Sobre mim</h3>
             <div class="about-me_text-box">
               <p class="about-me_text">Meu nome é Andreia e sou representante Eudora há 5 anos e nosso propósito é destacar sua beleza, despertar sua autoestima e incentivar o seu autocuidado através dos nossos produtos.</p>
@@ -314,6 +315,10 @@
     <script src="./src/js/index.js" type="module"></script>
     <script src="./src/js/header.js" type="module"></script>
     <script src="./src/js/valid-input.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </div>
 </body>
 </html>
