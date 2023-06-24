@@ -785,6 +785,7 @@ strong {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 20px;
   border-bottom: 1px solid #FFF;
   margin-bottom: 20px;
@@ -798,6 +799,10 @@ strong {
 
 .footer_image img {
   width: 200px;
+}
+
+.footer-content-itens {
+  margin-inline: auto;
 }
 
 .footer-content-itens > ul {
@@ -847,4 +852,10 @@ strong {
 
 .footer .copyright a:hover {
   color: #6d13d4;
+}
+
+@media screen and (max-width: 659px) {
+  .footer-content {
+    flex-direction: column;
+  }
 }
