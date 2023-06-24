@@ -51,15 +51,19 @@ productsCarouselAll.forEach(productsCarousel => {
   function dragging(e) {
     if(!isDragStart) return;
     e.preventDefault();
-    productsCarousel.classList.add("dragging");
+    if(e.type != "touchmove") {
+      productsCarousel.classList.add("dragging");
+    }
     let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
     productsCarousel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
   }
   
-  function dragStop() {
+  function dragStop(e) {
     isDragStart = false;
-    productsCarousel.classList.remove("dragging");
+    if (e.type != "touchmove") {
+      productsCarousel.classList.remove("dragging");
+    }
   }
   
   productsCarousel.addEventListener("mousedown", dragStart);
