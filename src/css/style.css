@@ -689,6 +689,20 @@ strong {
   }
 }
 
+/* BACKGROUND EUDORA FIXED */
+.bg-eudora-fixed {
+  background-image: url(../img/logo/logomarca-eudora.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 60%;
+  width: 100%;
+  background-color: var(--dark-purple);
+  height: 100vh;
+  padding: 85px 0;
+  box-sizing: border-box;
+}
+
 @media screen and (max-height: 415px) {
   .main_top {
     height: auto;
@@ -716,20 +730,12 @@ strong {
   .main_top_article_img {
     display: none;
   }
-}
 
-/* BACKGROUND EUDORA FIXED */
-.bg-eudora-fixed {
-  background-image: url(../img/logo/logomarca-eudora.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 60%;
-  width: 100%;
-  background-color: var(--dark-purple);
-  height: 100vh;
-  padding: 85px 0;
-  box-sizing: border-box;
+  .bg-eudora-fixed {
+    background-position: center 70%;
+    background-size: 90vh;
+    padding: 0;
+  }
 }
 
 /* ABOUT ME */
