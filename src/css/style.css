@@ -758,6 +758,28 @@ strong {
   text-align: end;
 }
 
+@media screen and (max-width: 700px) {
+  .about-me_container.sections-container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .about-me_container > div {
+    width: 100%;
+  }
+
+  .about-me_image-container img {
+    margin: auto;
+  }
+
+  .about-me_text-container {
+    background-size: 30%;
+    background-repeat: repeat-x;
+    padding: 0;
+  }
+}
+
 /* CONTACT */
 .contact {
   background-color: var(--light-purple);
