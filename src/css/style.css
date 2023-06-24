@@ -183,7 +183,7 @@ html {
   }
 
   #x-menu:checked + .hamburguer-menu_label > .menu-streak:nth-child(2) {
-    display: none;
+    opacity: 0;
   }
 
   #x-menu:checked + .hamburguer-menu_label > .menu-streak:last-child {
@@ -1074,6 +1074,29 @@ strong {
 }
 
 @media screen and (max-width: 659px) {
+  .header {
+    height: 70px;
+    padding: 10px 20px;
+  }
+
+  .hamburguer-menu_label {
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .menu-streak {
+    width: 30px;
+    height: 4px;
+  }
+
+  #x-menu:checked + .hamburguer-menu_label > .menu-streak:first-child {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  #x-menu:checked + .hamburguer-menu_label > .menu-streak:last-child {
+    transform: translateY(-12px)rotate(135deg);
+  }
+
   .footer-content {
     row-gap: 40px;
   }
