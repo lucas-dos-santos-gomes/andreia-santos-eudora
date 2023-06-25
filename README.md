@@ -26,8 +26,7 @@
   <a href="#como-usar">Como usar</a> •
   <a href="#feedback">Feedback</a> •
   <a href="#creditos">Creditos</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#licença">Licença</a>
 </p>
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
@@ -87,28 +86,14 @@ Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 - [AOS](https://github.com/michalsnik/aos)
 - [WhatsApp API](https://api.whatsapp.com/)
 
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
-
-## Support
-
-<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-<p>Or</p> 
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## You may also like...
+## Você pode gostar...
 
 - [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
 - [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
-## License
+## Licença
 
-MIT
+[MIT](https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/LICENSE)
 
 ---
 
