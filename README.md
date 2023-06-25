@@ -9,8 +9,14 @@
   <a href="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/tags">
     <img src="https://img.shields.io/github/v/tag/lucas-dos-santos-gomes/andreia-santos-eudora" alt="Shield Tag">
   </a>
+  <a href="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora">
+    <img src="https://img.shields.io/github/last-commit/lucas-dos-santos-gomes/andreia-santos-eudora/main" alt="Shield Commit">
+  </a>
   <a href="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/archive/refs/heads/main.zip">
     <img src="https://img.shields.io/github/repo-size/lucas-dos-santos-gomes/andreia-santos-eudora?color=gree" alt="Shield Repo Size">
+  </a>
+  <a href="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/lucas-dos-santos-gomes/andreia-santos-eudora" alt="Shield License">
   </a>
   <a href="https://www.paypal.me/AndreiaSantosEudora">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
@@ -33,13 +39,13 @@
   <a href="#licença">Licença</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![site-gif](https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/assets/106649118/9c41a7eb-022d-4f66-8a77-1eeccce8ef21)
 
 ## Características
 
 Essa foi uma proposta do "Corre da Quebrada" pedido pela professora Débora Regina do Instituto PROA, onde o objetivo era montar um site em HTML, CSS E JavaScript para algum empreendedor de comunidade, para aumentar o alcance do seu negócio e melhorar a visibilidade de trabalhadores de periferias. Assim, decidi criar esse site para minha mãe, Andreia Silva dos Santos, que revende produtos da Eudora como afiliada.
 
-Abaixo, estão listadas algumas características dessa aplicação:
+Abaixo, estão listadas as principais funcionalidades dessa aplicação:
 
 * Menu interativo
 * Informações da vendedora
