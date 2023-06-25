@@ -21,8 +21,9 @@
 </p>
 
 <p align="center">
-  <a href="#caracteristicas">Características</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#características">Características</a> •
+  <a href="#stack-utilizada">Stack</a> •
+  <a href="#como-usar">Como usar</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
@@ -31,10 +32,11 @@
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
-## Caracteristicas
+## Características
 
-<p>Essa foi uma proposta do "Corre da Quebrada" pedido pela professora Débora Regina do Instituto PROA, onde o objetivo era montar um site em HTML, CSS E JavaScript para algum empreendedor de comunidade, para aumentar o alcance do seu negócio e melhorar a visibilidade de trabalhadores de periferias. Assim, decidi criar esse site para minha mãe, Andreia Silva dos Santos, que revende produtos da Eudora como afiliada.</p>
-<p>Abaixo, estão listadas algumas características dessa aplicação:</p>
+Essa foi uma proposta do "Corre da Quebrada" pedido pela professora Débora Regina do Instituto PROA, onde o objetivo era montar um site em HTML, CSS E JavaScript para algum empreendedor de comunidade, para aumentar o alcance do seu negócio e melhorar a visibilidade de trabalhadores de periferias. Assim, decidi criar esse site para minha mãe, Andreia Silva dos Santos, que revende produtos da Eudora como afiliada.
+
+Abaixo, estão listadas algumas características dessa aplicação:
 
 * Menu interativo
 * Informações da vendedora
@@ -45,26 +47,33 @@
 * É possível fazer o pedido de produtos
 * Páginas de produtos e sobre estão em construção
 
-## How To Use
+## Stack utilizada
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+<p>Aqui, estão listadas todas as tecnologias utilizadas nesse projeto: </p>
+
+- HTML
+- CSS
+- JavaScript
+- Git
+- Figma
+- Vercel
+
+## Como usar
+
+Você pode apertar nos links disponíveis nessa página e nesse documento, baixar o código ou clonar esse repositório na sua máquina. Para fazer isso, é necessário ter o [Git](https://git-scm.com) instalado no seu computador.
+
+Caso já tenha, abra o terminal (prompt de comando) em algum local do PC e Execute as linhas de comando a seguir:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora
 
 # Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+$ cd andreia-santos-eudora
 ```
 
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+> **Nota:**
+> Agora, você pode abrir o arquivo 'index.html' ou utilizar a externsão 'Live Server' do Visual Studio Code
 
 
 ## Download
