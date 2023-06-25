@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/github/repo-size/lucas-dos-santos-gomes/andreia-santos-eudora?color=gree" alt="Shield Repo Size">
   </a>
   <a href="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/lucas-dos-santos-gomes/andreia-santos-eudora" alt="Shield License">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="Shield License">
   </a>
   <a href="https://www.paypal.me/AndreiaSantosEudora">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
