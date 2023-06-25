@@ -88,16 +88,16 @@ Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 
 ## Você pode gostar...
 
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
+- [Mini Portfólio](https://github.com/lucas-dos-santos-gomes/mini-portfolio) - Um profile card sobre mim que mostra minhas redes sociais, informações e projetos pessoais
+- [Decodificador Alura](https://github.com/lucas-dos-santos-gomes/decodificador-alura) - Um decodificador que faz e desfaz criptografias de textos
+- [Gerador de QR Codes](https://github.com/lucas-dos-santos-gomes/qr-code-generator) - Um gerador de QR Codes através de links, onde é possível baixar a imagem gerada
 
 ## Licença
 
-[MIT](https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/LICENSE)
+[MIT](https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/blob/main/LICENSE)
 
 ---
 
 > [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
 > GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
 > Twitter [@amit_merchant](https://twitter.com/amit_merchant)
-
