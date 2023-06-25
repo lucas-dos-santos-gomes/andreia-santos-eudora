@@ -1,5 +1,5 @@
-<h1 style="display: flex; flex-direction: column; align-items: center">
-  Andreia Santos
+<h1 align="center">
+  <p>Andreia Santos</p>
   <img src="./src/img/logo/logo-eudora2.png" alt="Logo" width="250px" />
 </h1>
 
