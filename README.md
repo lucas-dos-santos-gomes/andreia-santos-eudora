@@ -25,7 +25,7 @@
   <a href="#stack-utilizada">Stack</a> •
   <a href="#como-usar">Como usar</a> •
   <a href="#feedback">Feedback</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#creditos">Creditos</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
@@ -79,17 +79,13 @@ $ cd andreia-santos-eudora
 
 Esse site é um projeto real, com o objetivo de ajudar minha mãe. Então, se você gostou de usar esta aplicação, se ela te ajudou de alguma forma ou se teve algum problema, gostaria que você enviasse um e-mail para <lucasdev.programador@gmail.com> sobre qualquer feedback que queira dizer sobre este site. Eu realmente aprecio isso e pode me ajudar bastante!
 
-## Credits
+## Creditos
 
-This software uses the following open source packages:
+Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
+- [Font Awesome](https://fontawesome.com/)
+- [AOS](https://github.com/michalsnik/aos)
+- [WhatsApp API](https://api.whatsapp.com/)
 
 ## Related
 
