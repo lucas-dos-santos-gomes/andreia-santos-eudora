@@ -24,6 +24,7 @@
   <a href="#características">Características</a> •
   <a href="#stack-utilizada">Stack</a> •
   <a href="#como-usar">Como usar</a> •
+  <a href="#planos-futuros">Planos Futuros</a> •
   <a href="#feedback">Feedback</a> •
   <a href="#creditos">Creditos</a> •
   <a href="#autores">Autores</a> •
@@ -75,6 +76,19 @@ $ cd andreia-santos-eudora
 
 > **Nota:**
 > Agora, você pode abrir o arquivo 'index.html' ou utilizar a externsão 'Live Server' do Visual Studio Code
+
+## Planos Futuros
+
+O projeto já está em funcionamento, porém, ainda existem funcionalidades que pretendo trazer futuramente:
+
+* Finalizar página de produtos
+* Finalizar página 'sobre'
+* Adicionar função modo claro/escuro
+* Passar para React.js
+* Criar um Banco de Dados
+* Criação de aplicativo mobile
+* Realização de cadastro
+* Troca de página da Eudora para Boticário
 
 ## Feedback
 
