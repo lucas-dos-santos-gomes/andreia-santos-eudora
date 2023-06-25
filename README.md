@@ -26,6 +26,7 @@
   <a href="#como-usar">Como usar</a> •
   <a href="#feedback">Feedback</a> •
   <a href="#creditos">Creditos</a> •
+  <a href="#autores">Autores</a> •
   <a href="#links">Links</a> •
   <a href="#licença">Licença</a>
 </p>
@@ -87,6 +88,10 @@ Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 - [AOS](https://github.com/michalsnik/aos)
 - [WhatsApp API](https://api.whatsapp.com/)
 
+## Autores
+
+* **Lucas dos Santos Gomes**
+
 ## Links
 
 Aqui estão listados links referentes ao projeto e também ao seu criador.
@@ -122,7 +127,11 @@ Aqui estão listados links referentes ao projeto e também ao seu criador.
 [MIT](https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/blob/main/LICENSE)
 
 ---
+<br>
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+. <br>
+. <br>
+. <br><br>
+
+> <p> Me siga nas redes sociais e favorite esse projeto. <br>
+> Obrigado pela sua visita! </p>
