@@ -25,8 +25,9 @@
   <a href="#stack-utilizada">Stack</a> •
   <a href="#como-usar">Como usar</a> •
   <a href="#planos-futuros">Planos Futuros</a> •
-  <a href="#feedback">Feedback</a> •
+  <a href="#aprendizados">Aprendizados</a> •
   <a href="#creditos">Creditos</a> •
+  <a href="#feedback">Feedback</a> •
   <a href="#autores">Autores</a> •
   <a href="#links">Links</a> •
   <a href="#licença">Licença</a>
@@ -90,9 +91,9 @@ O projeto já está em funcionamento, porém, ainda existem funcionalidades que 
 * Realização de cadastro
 * Troca de página da Eudora para Boticário
 
-## Feedback
+## Aprendizados
 
-Esse site é um projeto real, com o objetivo de ajudar minha mãe. Então, se você gostou de usar esta aplicação, se ela te ajudou de alguma forma ou se teve algum problema, gostaria que você enviasse um e-mail para <lucasdev.programador@gmail.com> sobre qualquer feedback que queira dizer sobre este site. Eu realmente aprecio isso e pode me ajudar bastante!
+Nesse projeto, pude testar meus verdadeiros conhecimentos nas linguagens básicas. Foram necessárias muitas horas de testes e raciocínio, mas que mostraram que estou pronto para seguir e evoluir cada vez mais. Próximo passo é me especializar em React.js
 
 ## Creditos
 
@@ -101,6 +102,10 @@ Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 - [Font Awesome](https://fontawesome.com/)
 - [AOS](https://github.com/michalsnik/aos)
 - [WhatsApp API](https://api.whatsapp.com/)
+
+## Feedback
+
+Esse site é um projeto real, com o objetivo de ajudar minha mãe. Então, se você gostou de usar esta aplicação, se ela te ajudou de alguma forma ou se teve algum problema, gostaria que você enviasse um e-mail para <lucasdev.programador@gmail.com> sobre qualquer feedback que queira dizer sobre este site. Eu realmente aprecio isso e pode me ajudar bastante!
 
 ## Autores
 
