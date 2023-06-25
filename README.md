@@ -24,7 +24,7 @@
   <a href="#características">Características</a> •
   <a href="#stack-utilizada">Stack</a> •
   <a href="#como-usar">Como usar</a> •
-  <a href="#download">Download</a> •
+  <a href="#feedback">Feedback</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
@@ -75,14 +75,9 @@ $ cd andreia-santos-eudora
 > **Nota:**
 > Agora, você pode abrir o arquivo 'index.html' ou utilizar a externsão 'Live Server' do Visual Studio Code
 
+## Feedback
 
-## Download
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
-
-## Emailware
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Esse site é um projeto real, com o objetivo de ajudar minha mãe. Então, se você gostou de usar esta aplicação, se ela te ajudou de alguma forma ou se teve algum problema, gostaria que você enviasse um e-mail para <lucasdev.programador@gmail.com> sobre qualquer feedback que queira dizer sobre este site. Eu realmente aprecio isso e pode me ajudar bastante!
 
 ## Credits
 
