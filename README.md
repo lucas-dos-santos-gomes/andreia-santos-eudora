@@ -26,6 +26,7 @@
   <a href="#como-usar">Como usar</a> •
   <a href="#feedback">Feedback</a> •
   <a href="#creditos">Creditos</a> •
+  <a href="#links">Links</a> •
   <a href="#licença">Licença</a>
 </p>
 
@@ -85,6 +86,30 @@ Esse site utiliza os seguintes pacotes e bibliotecas <i>open source</i>:
 - [Font Awesome](https://fontawesome.com/)
 - [AOS](https://github.com/michalsnik/aos)
 - [WhatsApp API](https://api.whatsapp.com/)
+
+## Links
+
+Aqui estão listados links referentes ao projeto e também ao seu criador.
+
+### Links do projeto:
+
+* `Repositório:` <https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora>
+* `Site:` <https://andreia-santos-eudora.vercel.app/>
+
+### Links de Andreia:
+
+* `Instagram: ` <https://www.instagram.com/andreiasantos.eudora/>
+* `Facebook: ` <https://www.facebook.com/andreiasantos.eudora>
+* `E-mail: ` <mailto:andreiasantos.eudora@gmail.com>
+
+### Links de Lucas: 
+
+* `GitHub:` <https://github.com/lucas-dos-santos-gomes>
+* `LinkedIn:` <https://www.linkedin.com/in/lucas-santos-gomes/>
+* `Instagram:` <https://www.instagram.com/lukinhaxdlc/>
+* `E-mail:` <lucasdev.programador@gmail.com>
+
+> Caso encontre qualquer bug, erros ou tenha alguma sujestão para o projeto, entre em contato comigo (Lucas) pelo Instagram, E-mail ou pelo LinkedIn, todos citados acima.
 
 ## Você pode gostar...
 
