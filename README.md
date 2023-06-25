@@ -56,6 +56,10 @@ Abaixo, estão listadas as principais funcionalidades dessa aplicação:
 * É possível fazer o pedido de produtos
 * Páginas de produtos e sobre estão em construção
 
+<div align="center">
+  <img src="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/assets/106649118/8a3cec05-8e52-4bb7-8c8a-70c908526b77" alt="responsive_home" />
+</div>
+
 ## Stack utilizada
 
 <p>Aqui, estão listadas todas as tecnologias utilizadas nesse projeto: </p>
