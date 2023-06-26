@@ -1,5 +1,6 @@
 import { header } from "./header.js";
 import { allTables, Product } from "./db-products.js";
+import {createLocalStorage as create, updateLocalStorage as update, deleteLocalStorage as delet} from "./crud.js"; 
 
 const convert = new Product();
 const imgBag = document.querySelector("#img-bag");
@@ -43,8 +44,6 @@ function trashEvents() {
   });
 }
 
-let bdTest = [];
-
 let totalPrice = 0;
 function addBag() {
   const id = this.parentElement.classList[0];
@@ -57,9 +56,7 @@ function addBag() {
           itens.querySelector(".bag-modal_quantity-items").innerText = qtdProducts;
           countProductsForId++;
           
-          let bdIdTest = bdTest.filter(e => e.id == id);
-          bdTest[bdTest.indexOf(bdIdTest[0])].qtd = qtdProducts;
-          localStorage.setItem("teste", JSON.stringify(bdTest));
+          update(id, qtdProducts);
         };
       }
       if(countProductsForId == 0) {
@@ -75,9 +72,7 @@ function addBag() {
             </div>
           </li>
         `);
-        // localStorage test
-        bdTest.push({id: id, qtd: 1});
-        localStorage.setItem("teste", JSON.stringify(bdTest));
+        create(id);
       }
       totalPrice += filterProduct.value;
       submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
@@ -111,6 +106,8 @@ function hiddenBagList() {
 }
 
 function removeProduct() {
+  delet(this.parentElement.parentElement.parentElement.classList[0]);
+
   listBagProducts.removeChild(this.parentElement.parentElement.parentElement);
   const productValue = +((this.parentElement.children[0].textContent.slice(3, this.parentElement.children[0].textContent.length)).replace(",", "."));
   const quantityProducts = +(this.parentElement.previousElementSibling.children[0].innerText)
@@ -154,3 +151,5 @@ export function BagModal() {
   sendMessage();
   updateNumberItems();
 }
+
+/* CRUD LOCAL STORAGE */
