@@ -248,12 +248,12 @@ html {
 
 #img-bag:hover #bag {
   display: inline-block;
-  filter: brightness(0);
+  fill: #000;
   transition: .2s;
 }
 
 #bag {
-  filter: brightness(10);
+  fill: #FFF;
   transition: .4s;
 }
 
