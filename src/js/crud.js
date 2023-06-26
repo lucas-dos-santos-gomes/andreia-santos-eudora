@@ -11,7 +11,7 @@ export function readLocalStorage(addBag, tables, list, btn) {
   if(localStorage.tb_bag) {
     const TABLE_STORAGE = JSON.parse(localStorage.tb_bag);
     TABLE_STORAGE.forEach(register => {
-      initialPrice = addBag(register.id, tables, list, initialPrice, btn, register.qtd);
+      initialPrice = addBag(register.id, tables, list, initialPrice, btn, false, register.qtd);
     });
   }
   return initialPrice;

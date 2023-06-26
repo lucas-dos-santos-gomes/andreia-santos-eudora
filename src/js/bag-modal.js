@@ -45,7 +45,7 @@ function trashEvents() {
 }
 
 let totalPrice = 0;
-function addBag(id, tables, list, price, btn, qtd) {
+function addBag(id, tables, list, price, btn, confirmCreate, qtd) {
   let countProductsForId = 0;
   tables.forEach(filterProduct => {
     if (filterProduct.id == id) {
@@ -71,9 +71,11 @@ function addBag(id, tables, list, price, btn, qtd) {
             </div>
           </li>
         `);
-        create(id);
+        if(confirmCreate) {
+          create(id);
+        }
       }
-      price += filterProduct.value;
+      price += filterProduct.value * (qtd || 1);
       btn.innerText = `Finalizar compra (R$ ${convert.convertToString(price.toFixed(2))})`;
     }
   });
@@ -145,7 +147,7 @@ export function BagModal() {
   bagHovers();
   buttonProducts.forEach(button => {
     button.onclick = () => {
-      totalPrice = addBag(button.parentElement.classList[0], allTables, listBagProducts, totalPrice, submitBag);
+      totalPrice = addBag(button.parentElement.classList[0], allTables, listBagProducts, totalPrice, submitBag, true);
     };
   });
   totalPrice = read(addBag, allTables, listBagProducts, submitBag);
