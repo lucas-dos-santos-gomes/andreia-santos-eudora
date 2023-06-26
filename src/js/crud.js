@@ -31,6 +31,11 @@ export function updateLocalStorage(id, qtd) {
 }
 
 export function deleteLocalStorage(id) {
+  if(typeof localStorage.tb_bag != "undefined") {
+    if(JSON.parse(localStorage.tb_bag).length > bd_localStorage) {
+      bd_localStorage = bd_localStorage.concat(JSON.parse(localStorage.tb_bag));
+    }
+  }
   bd_localStorage = bd_localStorage.filter(e => e.id != id);
   if(bd_localStorage.length == 0) {
     localStorage.removeItem("tb_bag");
