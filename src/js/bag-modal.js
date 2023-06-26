@@ -1,6 +1,6 @@
 import { header } from "./header.js";
 import { allTables, Product } from "./db-products.js";
-import {createLocalStorage as create, readLocalStorage as read, updateLocalStorage as update, deleteLocalStorage as delet} from "./crud.js"; 
+import { createLocalStorage as create, readLocalStorage as read, updateLocalStorage as update, deleteLocalStorage as delet } from "./crud.js"; 
 
 const convert = new Product();
 const imgBag = document.querySelector("#img-bag");
