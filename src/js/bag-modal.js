@@ -45,7 +45,7 @@ function trashEvents() {
 }
 
 let totalPrice = 0;
-function addBag(id, tables, list, price, btn) {
+function addBag(id, tables, list, price, btn, qtd) {
   let countProductsForId = 0;
   tables.forEach(filterProduct => {
     if (filterProduct.id == id) {
@@ -63,7 +63,7 @@ function addBag(id, tables, list, price, btn) {
           <li class="${filterProduct.id} bag-modal_items">
             <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_130,f_auto,fl_progressive,q_auto:best/v1/imagens/products/${filterProduct.productCode}/${filterProduct.imgName}" alt="${filterProduct.imgAlt}">
             <div class="bag-modal_items-info">
-              <p class="bag-modal_title-product"><span class="bag-modal_quantity-items">1</span>x ${filterProduct.title}</p>
+              <p class="bag-modal_title-product"><span class="bag-modal_quantity-items">${qtd || 1}</span>x ${filterProduct.title}</p>
               <div class="bag-modal_price-and-trash">
                 <p class="bag-modal_price">R$ ${filterProduct.convertToString(filterProduct.value)}</p>
                 <i class="fa-solid fa-trash"></i>
@@ -148,7 +148,7 @@ export function BagModal() {
       totalPrice = addBag(button.parentElement.classList[0], allTables, listBagProducts, totalPrice, submitBag);
     };
   });
-  //read(addBag);
+  totalPrice = read(addBag, allTables, listBagProducts, submitBag);
 
   hiddenBagList();
   sendMessage();

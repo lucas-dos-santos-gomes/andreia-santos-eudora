@@ -6,8 +6,15 @@ export function createLocalStorage(id) {
   localStorage.setItem("tb_bag", JSON.stringify(bd_localStorage));
 }
 
-export function readLocalStorage(f) {
-  console.log(f);
+export function readLocalStorage(addBag, tables, list, btn) {
+  let initialPrice = 0;
+  if(localStorage.tb_bag) {
+    const TABLE_STORAGE = JSON.parse(localStorage.tb_bag);
+    TABLE_STORAGE.forEach(register => {
+      initialPrice = addBag(register.id, tables, list, initialPrice, btn, register.qtd);
+    });
+  }
+  return initialPrice;
 }
 
 export function updateLocalStorage(id, qtd) {
