@@ -6,8 +6,8 @@ export function createLocalStorage(id) {
   localStorage.setItem("tb_bag", JSON.stringify(bd_localStorage));
 }
 
-export function readLocalStorage() {
-
+export function readLocalStorage(f) {
+  console.log(f);
 }
 
 export function updateLocalStorage(id, qtd) {

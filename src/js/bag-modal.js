@@ -1,6 +1,6 @@
 import { header } from "./header.js";
 import { allTables, Product } from "./db-products.js";
-import {createLocalStorage as create, updateLocalStorage as update, deleteLocalStorage as delet} from "./crud.js"; 
+import {createLocalStorage as create, readLocalStorage as read, updateLocalStorage as update, deleteLocalStorage as delet} from "./crud.js"; 
 
 const convert = new Product();
 const imgBag = document.querySelector("#img-bag");
@@ -45,12 +45,11 @@ function trashEvents() {
 }
 
 let totalPrice = 0;
-function addBag() {
-  const id = this.parentElement.classList[0];
+function addBag(id, tables, list, price, btn) {
   let countProductsForId = 0;
-  allTables.forEach(filterProduct => {
+  tables.forEach(filterProduct => {
     if (filterProduct.id == id) {
-      for(let itens of listBagProducts.children) {
+      for(let itens of list.children) {
         if(Object.values(itens.classList)[0] == id) {
           let qtdProducts = +(itens.querySelector(".bag-modal_quantity-items").textContent) + 1
           itens.querySelector(".bag-modal_quantity-items").innerText = qtdProducts;
@@ -60,7 +59,7 @@ function addBag() {
         };
       }
       if(countProductsForId == 0) {
-        listBagProducts.innerHTML += (`
+        list.innerHTML += (`
           <li class="${filterProduct.id} bag-modal_items">
             <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_130,f_auto,fl_progressive,q_auto:best/v1/imagens/products/${filterProduct.productCode}/${filterProduct.imgName}" alt="${filterProduct.imgAlt}">
             <div class="bag-modal_items-info">
@@ -74,13 +73,14 @@ function addBag() {
         `);
         create(id);
       }
-      totalPrice += filterProduct.value;
-      submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
+      price += filterProduct.value;
+      btn.innerText = `Finalizar compra (R$ ${convert.convertToString(price.toFixed(2))})`;
     }
   });
   trashEvents();
   sendMessage();
   updateNumberItems();
+  return price;
 }
 
 function hiddenBagList() {
@@ -144,12 +144,13 @@ function updateNumberItems() {
 export function BagModal() {
   bagHovers();
   buttonProducts.forEach(button => {
-    button.onclick = addBag;
+    button.onclick = () => {
+      totalPrice = addBag(button.parentElement.classList[0], allTables, listBagProducts, totalPrice, submitBag);
+    };
   });
+  //read(addBag);
 
   hiddenBagList();
   sendMessage();
   updateNumberItems();
 }
-
-/* CRUD LOCAL STORAGE */
