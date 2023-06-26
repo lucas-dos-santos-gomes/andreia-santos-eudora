@@ -130,6 +130,8 @@ Aqui estão listados links referentes ao projeto e também ao seu criador.
 
 * `Repositório:` <https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora>
 * `Site:` <https://andreia-santos-eudora.vercel.app/>
+* `Protótipo no Figma:` <https://www.figma.com/file/vMmxNU1XyMrmnroYJrAvlK/andreia-santos-eudora?type=design&node-id=0%3A1&mode=design&t=KgNTPgIwCyZ0kqSC-1>
+* `Postagem no LinkedIn:` <https://www.linkedin.com/feed/update/urn:li:activity:7078867936207118336/>
 
 ### Links de Andreia:
 
