@@ -54,7 +54,7 @@ Abaixo, estão listadas as principais funcionalidades dessa aplicação:
 * Seção de produtos
 * Sacola/carrinho funcional
 * É possível fazer o pedido de produtos
-* Páginas de produtos e sobre estão em construção
+* Armazenamento de sacola com localStorage
 
 <div align="center">
   <img src="https://github.com/lucas-dos-santos-gomes/andreia-santos-eudora/assets/106649118/8a3cec05-8e52-4bb7-8c8a-70c908526b77" alt="responsive_home" />
@@ -97,6 +97,7 @@ O projeto já está em funcionamento, porém, ainda existem funcionalidades que 
 * Adicionar função modo claro/escuro
 * Passar para React.js
 * Criar um Banco de Dados
+* Página do administrador
 * Criação de aplicativo mobile
 * Realização de cadastro
 * Troca de página da Eudora para Boticário
