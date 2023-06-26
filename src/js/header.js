@@ -26,3 +26,6 @@ HAMBURGUER_LIST_ITEM.forEach(links => {
     checkMenu();
   }
 });
+
+header.classList.toggle("active", window.scrollY > 0);
+linkFocused.classList.toggle("active", window.scrollY > 0);
