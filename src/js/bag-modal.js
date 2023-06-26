@@ -43,8 +43,9 @@ function trashEvents() {
   });
 }
 
-let totalPrice = 0;
+let bdTest = [];
 
+let totalPrice = 0;
 function addBag() {
   const id = this.parentElement.classList[0];
   let countProductsForId = 0;
@@ -52,8 +53,13 @@ function addBag() {
     if (filterProduct.id == id) {
       for(let itens of listBagProducts.children) {
         if(Object.values(itens.classList)[0] == id) {
-          itens.querySelector(".bag-modal_quantity-items").innerText = +(itens.querySelector(".bag-modal_quantity-items").textContent) + 1;
+          let qtdProducts = +(itens.querySelector(".bag-modal_quantity-items").textContent) + 1
+          itens.querySelector(".bag-modal_quantity-items").innerText = qtdProducts;
           countProductsForId++;
+          
+          let bdIdTest = bdTest.filter(e => e.id == id);
+          bdTest[bdTest.indexOf(bdIdTest[0])].qtd = qtdProducts;
+          localStorage.setItem("teste", JSON.stringify(bdTest));
         };
       }
       if(countProductsForId == 0) {
@@ -69,6 +75,9 @@ function addBag() {
             </div>
           </li>
         `);
+        // localStorage test
+        bdTest.push({id: id, qtd: 1});
+        localStorage.setItem("teste", JSON.stringify(bdTest));
       }
       totalPrice += filterProduct.value;
       submitBag.innerText = `Finalizar compra (R$ ${convert.convertToString(totalPrice.toFixed(2))})`;
