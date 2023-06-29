@@ -79,10 +79,11 @@ function addBag(id, tables, list, price, btn, confirmCreate, qtd) {
       btn.innerText = `Finalizar compra (R$ ${convert.convertToString(price.toFixed(2))})`;
     }
   });
+  totalPrice = price;
   trashEvents();
   sendMessage();
   updateNumberItems();
-  return price;
+  return totalPrice;
 }
 
 function hiddenBagList() {
